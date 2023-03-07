@@ -1,0 +1,2 @@
+setExtractRCMode -lefTechFileMap ../QRC/lefdef.layermap
+setDesignMode -process 180

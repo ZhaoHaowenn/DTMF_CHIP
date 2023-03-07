@@ -1,0 +1,28 @@
+if {![namespace exists ::IMEX]} { namespace eval ::IMEX {} }
+set ::IMEX::dataVar [file dirname [file normalize [info script]]]
+set ::IMEX::libVar ${::IMEX::dataVar}/libs
+
+catch { setDesignMode -process 180 }
+catch { setAnalysisMode -analysisType bcwc }
+catch { setAnalysisMode -clockPropagation forcedIdeal }
+catch { setAnalysisMode -usefulSkew true }
+catch { setOptMode -activeHoldViews { dtmf_view_hold } }
+catch { setOptMode -activeSetupViews { dtmf_view_setup } }
+catch { setOptMode -autoSetupViews { dtmf_view_setup} }
+catch { setOptMode -drcMargin 0 }
+catch { setOptMode -effort high }
+catch { setOptMode -fixDrc true }
+catch { setOptMode -optimizeFF true }
+catch { setOptMode -setupTargetSlack 0 }
+setExtractRCMode  -lefTechFileMap ${::IMEX::libVar}/misc/lefdef.layermap -engine preRoute -total_c_th 5 -relative_c_th 0.03 -coupling_c_th 3
+catch { setCTSMode -moveGateLimit 25 }
+catch { setPlaceMode -hardFence true }
+catch { setPlaceMode -ignoreLowEffortPathGroups true }
+catch { setPlaceMode -NMPfixAreaCalcBug 1 }
+catch { setPlaceMode -usePreconditioning auto }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setTrialRouteMode -handlePreroute true }
+catch { setTrialRouteMode -keepMarkedOptRoutes true }

@@ -1,0 +1,4 @@
+alias setup     'set arguments = ( \!* ) ; source /eng/tools/icd/pe/AutoEnvSetup/setup.csh ; unset arguments'
+
+
+ 

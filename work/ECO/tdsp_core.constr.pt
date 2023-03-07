@@ -1,0 +1,1108 @@
+#/**************************************************
+# * Timing constraint file for partition tdsp_core         
+# * With clock latency adjustments                
+# **************************************************/
+create_clock -name {vclk1_virtual_setuphold_0} -period 10.000 -waveform { 0.000 5.000 }
+create_clock -name {vclk1} -period 10.000 -waveform { 0.000 5.000 } [list  \
+  [get_ports {clk}]] -add
+create_clock -name {vclk2_virtual_setuphold_0} -period 20.000 -waveform { 0.000 10.000 }
+create_clock -name {vclk2} -period 20.000 -waveform { 0.000 10.000 }
+set_clock_latency -min -rise 2.000 [get_ports {clk}]
+set_clock_latency -max -rise 2.000 [get_ports {clk}]
+set_input_delay 6.935 -clock {vclk2_virtual_setuphold_0} -max -rise \
+  [get_ports {t_data_in[15]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 5.703 -clock {vclk2_virtual_setuphold_0} -max -fall \
+  [get_ports {t_data_in[15]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 6.607 -clock {vclk2_virtual_setuphold_0} -max -rise \
+  [get_ports {t_data_in[14]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 5.473 -clock {vclk2_virtual_setuphold_0} -max -fall \
+  [get_ports {t_data_in[14]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 6.801 -clock {vclk2_virtual_setuphold_0} -max -rise \
+  [get_ports {t_data_in[13]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 5.615 -clock {vclk2_virtual_setuphold_0} -max -fall \
+  [get_ports {t_data_in[13]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 6.991 -clock {vclk2_virtual_setuphold_0} -max -rise \
+  [get_ports {t_data_in[12]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 5.759 -clock {vclk2_virtual_setuphold_0} -max -fall \
+  [get_ports {t_data_in[12]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 7.051 -clock {vclk2_virtual_setuphold_0} -max -rise \
+  [get_ports {t_data_in[11]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 5.802 -clock {vclk2_virtual_setuphold_0} -max -fall \
+  [get_ports {t_data_in[11]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 7.083 -clock {vclk2_virtual_setuphold_0} -max -rise \
+  [get_ports {t_data_in[10]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 5.833 -clock {vclk2_virtual_setuphold_0} -max -fall \
+  [get_ports {t_data_in[10]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 7.571 -clock {vclk2_virtual_setuphold_0} -max -rise \
+  [get_ports {t_data_in[9]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 6.119 -clock {vclk2_virtual_setuphold_0} -max -fall \
+  [get_ports {t_data_in[9]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 6.731 -clock {vclk2_virtual_setuphold_0} -max -rise \
+  [get_ports {t_data_in[8]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 5.558 -clock {vclk2_virtual_setuphold_0} -max -fall \
+  [get_ports {t_data_in[8]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 6.631 -clock {vclk2_virtual_setuphold_0} -max -rise \
+  [get_ports {t_data_in[7]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 5.486 -clock {vclk2_virtual_setuphold_0} -max -fall \
+  [get_ports {t_data_in[7]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 7.169 -clock {vclk2_virtual_setuphold_0} -max -rise \
+  [get_ports {t_data_in[6]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 5.871 -clock {vclk2_virtual_setuphold_0} -max -fall \
+  [get_ports {t_data_in[6]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 7.260 -clock {vclk2_virtual_setuphold_0} -max -rise \
+  [get_ports {t_data_in[5]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 5.941 -clock {vclk2_virtual_setuphold_0} -max -fall \
+  [get_ports {t_data_in[5]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 7.131 -clock {vclk2_virtual_setuphold_0} -max -rise \
+  [get_ports {t_data_in[4]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 5.855 -clock {vclk2_virtual_setuphold_0} -max -fall \
+  [get_ports {t_data_in[4]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 7.439 -clock {vclk2_virtual_setuphold_0} -max -rise \
+  [get_ports {t_data_in[3]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 6.058 -clock {vclk2_virtual_setuphold_0} -max -fall \
+  [get_ports {t_data_in[3]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 7.818 -clock {vclk2_virtual_setuphold_0} -max -rise \
+  [get_ports {t_data_in[2]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 6.396 -clock {vclk2_virtual_setuphold_0} -max -fall \
+  [get_ports {t_data_in[2]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 7.910 -clock {vclk2_virtual_setuphold_0} -max -rise \
+  [get_ports {t_data_in[1]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 6.458 -clock {vclk2_virtual_setuphold_0} -max -fall \
+  [get_ports {t_data_in[1]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 7.921 -clock {vclk2_virtual_setuphold_0} -max -rise \
+  [get_ports {t_data_in[0]}] -source_latency_included  -network_latency_included  -add_delay 
+set_input_delay 6.457 -clock {vclk2_virtual_setuphold_0} -max -fall \
+  [get_ports {t_data_in[0]}] -source_latency_included  -network_latency_included  -add_delay 
+set_drive -max 1.648 -rise [get_ports {clk}]
+set_drive -max 0.936 -fall [get_ports {clk}]
+set_drive -max 0.178 -rise [get_ports {reset}]
+set_drive -max 0.183 -fall [get_ports {reset}]
+set_drive -max 1.648 -rise [get_ports {t_data_in[15]}]
+set_drive -max 0.936 -fall [get_ports {t_data_in[15]}]
+set_drive -max 1.648 -rise [get_ports {t_data_in[14]}]
+set_drive -max 0.936 -fall [get_ports {t_data_in[14]}]
+set_drive -max 1.648 -rise [get_ports {t_data_in[13]}]
+set_drive -max 0.936 -fall [get_ports {t_data_in[13]}]
+set_drive -max 1.648 -rise [get_ports {t_data_in[12]}]
+set_drive -max 0.936 -fall [get_ports {t_data_in[12]}]
+set_drive -max 1.648 -rise [get_ports {t_data_in[11]}]
+set_drive -max 0.936 -fall [get_ports {t_data_in[11]}]
+set_drive -max 1.648 -rise [get_ports {t_data_in[10]}]
+set_drive -max 0.936 -fall [get_ports {t_data_in[10]}]
+set_drive -max 1.648 -rise [get_ports {t_data_in[9]}]
+set_drive -max 0.936 -fall [get_ports {t_data_in[9]}]
+set_drive -max 1.648 -rise [get_ports {t_data_in[8]}]
+set_drive -max 0.936 -fall [get_ports {t_data_in[8]}]
+set_drive -max 1.648 -rise [get_ports {t_data_in[7]}]
+set_drive -max 0.936 -fall [get_ports {t_data_in[7]}]
+set_drive -max 1.648 -rise [get_ports {t_data_in[6]}]
+set_drive -max 0.936 -fall [get_ports {t_data_in[6]}]
+set_drive -max 1.648 -rise [get_ports {t_data_in[5]}]
+set_drive -max 0.936 -fall [get_ports {t_data_in[5]}]
+set_drive -max 1.648 -rise [get_ports {t_data_in[4]}]
+set_drive -max 0.936 -fall [get_ports {t_data_in[4]}]
+set_drive -max 1.648 -rise [get_ports {t_data_in[3]}]
+set_drive -max 0.936 -fall [get_ports {t_data_in[3]}]
+set_drive -max 1.648 -rise [get_ports {t_data_in[2]}]
+set_drive -max 0.936 -fall [get_ports {t_data_in[2]}]
+set_drive -max 1.648 -rise [get_ports {t_data_in[1]}]
+set_drive -max 0.936 -fall [get_ports {t_data_in[1]}]
+set_drive -max 1.648 -rise [get_ports {t_data_in[0]}]
+set_drive -max 0.936 -fall [get_ports {t_data_in[0]}]
+set_drive -max 1.648 -rise [get_ports {rom_data_in[15]}]
+set_drive -max 0.936 -fall [get_ports {rom_data_in[15]}]
+set_drive -max 1.648 -rise [get_ports {rom_data_in[14]}]
+set_drive -max 0.936 -fall [get_ports {rom_data_in[14]}]
+set_drive -max 1.648 -rise [get_ports {rom_data_in[13]}]
+set_drive -max 0.936 -fall [get_ports {rom_data_in[13]}]
+set_drive -max 1.648 -rise [get_ports {rom_data_in[12]}]
+set_drive -max 0.936 -fall [get_ports {rom_data_in[12]}]
+set_drive -max 1.648 -rise [get_ports {rom_data_in[11]}]
+set_drive -max 0.936 -fall [get_ports {rom_data_in[11]}]
+set_drive -max 1.648 -rise [get_ports {rom_data_in[10]}]
+set_drive -max 0.936 -fall [get_ports {rom_data_in[10]}]
+set_drive -max 1.648 -rise [get_ports {rom_data_in[9]}]
+set_drive -max 0.936 -fall [get_ports {rom_data_in[9]}]
+set_drive -max 1.648 -rise [get_ports {rom_data_in[8]}]
+set_drive -max 0.936 -fall [get_ports {rom_data_in[8]}]
+set_drive -max 1.648 -rise [get_ports {rom_data_in[7]}]
+set_drive -max 0.936 -fall [get_ports {rom_data_in[7]}]
+set_drive -max 1.648 -rise [get_ports {rom_data_in[6]}]
+set_drive -max 0.936 -fall [get_ports {rom_data_in[6]}]
+set_drive -max 1.648 -rise [get_ports {rom_data_in[5]}]
+set_drive -max 0.936 -fall [get_ports {rom_data_in[5]}]
+set_drive -max 1.648 -rise [get_ports {rom_data_in[4]}]
+set_drive -max 0.936 -fall [get_ports {rom_data_in[4]}]
+set_drive -max 1.648 -rise [get_ports {rom_data_in[3]}]
+set_drive -max 0.936 -fall [get_ports {rom_data_in[3]}]
+set_drive -max 1.648 -rise [get_ports {rom_data_in[2]}]
+set_drive -max 0.936 -fall [get_ports {rom_data_in[2]}]
+set_drive -max 1.648 -rise [get_ports {rom_data_in[1]}]
+set_drive -max 0.936 -fall [get_ports {rom_data_in[1]}]
+set_drive -max 1.648 -rise [get_ports {rom_data_in[0]}]
+set_drive -max 0.936 -fall [get_ports {rom_data_in[0]}]
+set_drive -max 1.648 -rise [get_ports {bus_grant}]
+set_drive -max 0.936 -fall [get_ports {bus_grant}]
+set_drive -max 0.178 -rise [get_ports {port_pad_data_in[15]}]
+set_drive -max 0.183 -fall [get_ports {port_pad_data_in[15]}]
+set_drive -max 0.178 -rise [get_ports {port_pad_data_in[14]}]
+set_drive -max 0.183 -fall [get_ports {port_pad_data_in[14]}]
+set_drive -max 0.178 -rise [get_ports {port_pad_data_in[13]}]
+set_drive -max 0.183 -fall [get_ports {port_pad_data_in[13]}]
+set_drive -max 0.178 -rise [get_ports {port_pad_data_in[12]}]
+set_drive -max 0.183 -fall [get_ports {port_pad_data_in[12]}]
+set_drive -max 0.178 -rise [get_ports {port_pad_data_in[11]}]
+set_drive -max 0.183 -fall [get_ports {port_pad_data_in[11]}]
+set_drive -max 0.178 -rise [get_ports {port_pad_data_in[10]}]
+set_drive -max 0.183 -fall [get_ports {port_pad_data_in[10]}]
+set_drive -max 0.178 -rise [get_ports {port_pad_data_in[9]}]
+set_drive -max 0.183 -fall [get_ports {port_pad_data_in[9]}]
+set_drive -max 0.178 -rise [get_ports {port_pad_data_in[8]}]
+set_drive -max 0.183 -fall [get_ports {port_pad_data_in[8]}]
+set_drive -max 0.178 -rise [get_ports {port_pad_data_in[7]}]
+set_drive -max 0.183 -fall [get_ports {port_pad_data_in[7]}]
+set_drive -max 0.178 -rise [get_ports {port_pad_data_in[6]}]
+set_drive -max 0.183 -fall [get_ports {port_pad_data_in[6]}]
+set_drive -max 0.178 -rise [get_ports {port_pad_data_in[5]}]
+set_drive -max 0.183 -fall [get_ports {port_pad_data_in[5]}]
+set_drive -max 0.178 -rise [get_ports {port_pad_data_in[4]}]
+set_drive -max 0.183 -fall [get_ports {port_pad_data_in[4]}]
+set_drive -max 0.178 -rise [get_ports {port_pad_data_in[3]}]
+set_drive -max 0.183 -fall [get_ports {port_pad_data_in[3]}]
+set_drive -max 0.178 -rise [get_ports {port_pad_data_in[2]}]
+set_drive -max 0.183 -fall [get_ports {port_pad_data_in[2]}]
+set_drive -max 0.178 -rise [get_ports {port_pad_data_in[1]}]
+set_drive -max 0.183 -fall [get_ports {port_pad_data_in[1]}]
+set_drive -max 0.178 -rise [get_ports {port_pad_data_in[0]}]
+set_drive -max 0.183 -fall [get_ports {port_pad_data_in[0]}]
+set_drive -max 1.648 -rise [get_ports {bio}]
+set_drive -max 0.936 -fall [get_ports {bio}]
+set_drive -max 0.178 -rise [get_ports {int}]
+set_drive -max 0.183 -fall [get_ports {int}]
+set_drive -max 0.305 -rise [get_ports {scan_en}]
+set_drive -max 0.221 -fall [get_ports {scan_en}]
+set_drive -max 1.648 -rise [get_ports {BG_scan_in}]
+set_drive -max 0.936 -fall [get_ports {BG_scan_in}]
+set_load -max -pin_load 0.015 [get_ports {as}]
+set_load -max -wire_load 0.012 [get_ports {as}]
+set_load -max -pin_load 0.006 [get_ports {read}]
+set_load -max -wire_load 0.009 [get_ports {read}]
+set_load -max -pin_load 0.016 [get_ports {write}]
+set_load -max -wire_load 0.059 [get_ports {write}]
+set_load -max -pin_load 0.026 [get_ports {address[7]}]
+set_load -max -wire_load 0.012 [get_ports {address[7]}]
+set_load -max -pin_load 0.023 [get_ports {address[6]}]
+set_load -max -wire_load 0.043 [get_ports {address[6]}]
+set_load -max -pin_load 0.023 [get_ports {address[5]}]
+set_load -max -wire_load 0.044 [get_ports {address[5]}]
+set_load -max -pin_load 0.023 [get_ports {address[4]}]
+set_load -max -wire_load 0.039 [get_ports {address[4]}]
+set_load -max -pin_load 0.026 [get_ports {address[3]}]
+set_load -max -wire_load 0.156 [get_ports {address[3]}]
+set_load -max -pin_load 0.026 [get_ports {address[2]}]
+set_load -max -wire_load 0.145 [get_ports {address[2]}]
+set_load -max -pin_load 0.026 [get_ports {address[1]}]
+set_load -max -wire_load 0.143 [get_ports {address[1]}]
+set_load -max -pin_load 0.026 [get_ports {address[0]}]
+set_load -max -wire_load 0.143 [get_ports {address[0]}]
+set_load -max -pin_load 0.016 [get_ports {t_data_out[15]}]
+set_load -max -wire_load 0.064 [get_ports {t_data_out[15]}]
+set_load -max -pin_load 0.018 [get_ports {t_data_out[14]}]
+set_load -max -wire_load 0.086 [get_ports {t_data_out[14]}]
+set_load -max -pin_load 0.025 [get_ports {t_data_out[13]}]
+set_load -max -wire_load 0.120 [get_ports {t_data_out[13]}]
+set_load -max -pin_load 0.026 [get_ports {t_data_out[12]}]
+set_load -max -wire_load 0.123 [get_ports {t_data_out[12]}]
+set_load -max -pin_load 0.020 [get_ports {t_data_out[11]}]
+set_load -max -wire_load 0.059 [get_ports {t_data_out[11]}]
+set_load -max -pin_load 0.020 [get_ports {t_data_out[10]}]
+set_load -max -wire_load 0.057 [get_ports {t_data_out[10]}]
+set_load -max -pin_load 0.018 [get_ports {t_data_out[9]}]
+set_load -max -wire_load 0.117 [get_ports {t_data_out[9]}]
+set_load -max -pin_load 0.026 [get_ports {t_data_out[8]}]
+set_load -max -wire_load 0.187 [get_ports {t_data_out[8]}]
+set_load -max -pin_load 0.018 [get_ports {t_data_out[7]}]
+set_load -max -wire_load 0.116 [get_ports {t_data_out[7]}]
+set_load -max -pin_load 0.016 [get_ports {t_data_out[6]}]
+set_load -max -wire_load 0.086 [get_ports {t_data_out[6]}]
+set_load -max -pin_load 0.026 [get_ports {t_data_out[5]}]
+set_load -max -wire_load 0.177 [get_ports {t_data_out[5]}]
+set_load -max -pin_load 0.026 [get_ports {t_data_out[4]}]
+set_load -max -wire_load 0.212 [get_ports {t_data_out[4]}]
+set_load -max -pin_load 0.026 [get_ports {t_data_out[3]}]
+set_load -max -wire_load 0.185 [get_ports {t_data_out[3]}]
+set_load -max -pin_load 0.026 [get_ports {t_data_out[2]}]
+set_load -max -wire_load 0.188 [get_ports {t_data_out[2]}]
+set_load -max -pin_load 0.026 [get_ports {t_data_out[1]}]
+set_load -max -wire_load 0.206 [get_ports {t_data_out[1]}]
+set_load -max -pin_load 0.026 [get_ports {t_data_out[0]}]
+set_load -max -wire_load 0.156 [get_ports {t_data_out[0]}]
+set_load -max -pin_load 0.013 [get_ports {p_read}]
+set_load -max -wire_load 0.012 [get_ports {p_read}]
+set_load -max -pin_load 0.026 [get_ports {p_address[8]}]
+set_load -max -wire_load 0.007 [get_ports {p_address[8]}]
+set_load -max -pin_load 0.026 [get_ports {p_address[7]}]
+set_load -max -wire_load 0.007 [get_ports {p_address[7]}]
+set_load -max -pin_load 0.026 [get_ports {p_address[6]}]
+set_load -max -wire_load 0.007 [get_ports {p_address[6]}]
+set_load -max -pin_load 0.026 [get_ports {p_address[5]}]
+set_load -max -wire_load 0.007 [get_ports {p_address[5]}]
+set_load -max -pin_load 0.026 [get_ports {p_address[4]}]
+set_load -max -wire_load 0.007 [get_ports {p_address[4]}]
+set_load -max -pin_load 0.026 [get_ports {p_address[3]}]
+set_load -max -wire_load 0.007 [get_ports {p_address[3]}]
+set_load -max -pin_load 0.026 [get_ports {p_address[2]}]
+set_load -max -wire_load 0.007 [get_ports {p_address[2]}]
+set_load -max -pin_load 0.026 [get_ports {p_address[1]}]
+set_load -max -wire_load 0.007 [get_ports {p_address[1]}]
+set_load -max -pin_load 0.026 [get_ports {p_address[0]}]
+set_load -max -wire_load 0.007 [get_ports {p_address[0]}]
+set_load -max -pin_load 0.009 [get_ports {bus_request}]
+set_load -max -wire_load 0.004 [get_ports {bus_request}]
+set_load -max -pin_load 0.004 [get_ports {port_as}]
+set_load -max -wire_load 0.001 [get_ports {port_as}]
+set_load -max -pin_load 0.004 [get_ports {port_address[2]}]
+set_load -max -wire_load 0.001 [get_ports {port_address[2]}]
+set_load -max -pin_load 0.008 [get_ports {port_address[1]}]
+set_load -max -wire_load 0.002 [get_ports {port_address[1]}]
+set_load -max -pin_load 0.004 [get_ports {port_address[0]}]
+set_load -max -wire_load 0.003 [get_ports {port_address[0]}]
+set_load -max -pin_load 0.026 [get_ports {port_pad_data_out[15]}]
+set_load -max -wire_load 0.085 [get_ports {port_pad_data_out[15]}]
+set_load -max -pin_load 0.026 [get_ports {port_pad_data_out[14]}]
+set_load -max -wire_load 0.071 [get_ports {port_pad_data_out[14]}]
+set_load -max -pin_load 0.026 [get_ports {port_pad_data_out[13]}]
+set_load -max -wire_load 0.055 [get_ports {port_pad_data_out[13]}]
+set_load -max -pin_load 0.026 [get_ports {port_pad_data_out[12]}]
+set_load -max -wire_load 0.051 [get_ports {port_pad_data_out[12]}]
+set_load -max -pin_load 0.026 [get_ports {port_pad_data_out[11]}]
+set_load -max -wire_load 0.084 [get_ports {port_pad_data_out[11]}]
+set_load -max -pin_load 0.026 [get_ports {port_pad_data_out[10]}]
+set_load -max -wire_load 0.109 [get_ports {port_pad_data_out[10]}]
+set_load -max -pin_load 0.026 [get_ports {port_pad_data_out[9]}]
+set_load -max -wire_load 0.092 [get_ports {port_pad_data_out[9]}]
+set_load -max -pin_load 0.026 [get_ports {port_pad_data_out[8]}]
+set_load -max -wire_load 0.094 [get_ports {port_pad_data_out[8]}]
+set_load -max -pin_load 0.026 [get_ports {port_pad_data_out[7]}]
+set_load -max -wire_load 0.092 [get_ports {port_pad_data_out[7]}]
+set_load -max -pin_load 0.026 [get_ports {port_pad_data_out[6]}]
+set_load -max -wire_load 0.075 [get_ports {port_pad_data_out[6]}]
+set_load -max -pin_load 0.026 [get_ports {port_pad_data_out[5]}]
+set_load -max -wire_load 0.048 [get_ports {port_pad_data_out[5]}]
+set_load -max -pin_load 0.026 [get_ports {port_pad_data_out[4]}]
+set_load -max -wire_load 0.044 [get_ports {port_pad_data_out[4]}]
+set_load -max -pin_load 0.026 [get_ports {port_pad_data_out[3]}]
+set_load -max -wire_load 0.048 [get_ports {port_pad_data_out[3]}]
+set_load -max -pin_load 0.026 [get_ports {port_pad_data_out[2]}]
+set_load -max -wire_load 0.047 [get_ports {port_pad_data_out[2]}]
+set_load -max -pin_load 0.026 [get_ports {port_pad_data_out[1]}]
+set_load -max -wire_load 0.070 [get_ports {port_pad_data_out[1]}]
+set_load -max -pin_load 0.026 [get_ports {port_pad_data_out[0]}]
+set_load -max -wire_load 0.082 [get_ports {port_pad_data_out[0]}]
+set_load -max -pin_load 0.002 [get_ports {BG_scan_out}]
+set_load -max -wire_load 0.002 [get_ports {BG_scan_out}]
+set_drive -min 0.847 -rise [get_ports {clk}]
+set_drive -min 0.490 -fall [get_ports {clk}]
+set_drive -min 0.086 -rise [get_ports {reset}]
+set_drive -min 0.097 -fall [get_ports {reset}]
+set_drive -min 0.847 -rise [get_ports {t_data_in[15]}]
+set_drive -min 0.490 -fall [get_ports {t_data_in[15]}]
+set_drive -min 0.847 -rise [get_ports {t_data_in[14]}]
+set_drive -min 0.490 -fall [get_ports {t_data_in[14]}]
+set_drive -min 0.847 -rise [get_ports {t_data_in[13]}]
+set_drive -min 0.490 -fall [get_ports {t_data_in[13]}]
+set_drive -min 0.847 -rise [get_ports {t_data_in[12]}]
+set_drive -min 0.490 -fall [get_ports {t_data_in[12]}]
+set_drive -min 0.847 -rise [get_ports {t_data_in[11]}]
+set_drive -min 0.490 -fall [get_ports {t_data_in[11]}]
+set_drive -min 0.847 -rise [get_ports {t_data_in[10]}]
+set_drive -min 0.490 -fall [get_ports {t_data_in[10]}]
+set_drive -min 0.847 -rise [get_ports {t_data_in[9]}]
+set_drive -min 0.490 -fall [get_ports {t_data_in[9]}]
+set_drive -min 0.847 -rise [get_ports {t_data_in[8]}]
+set_drive -min 0.490 -fall [get_ports {t_data_in[8]}]
+set_drive -min 0.847 -rise [get_ports {t_data_in[7]}]
+set_drive -min 0.490 -fall [get_ports {t_data_in[7]}]
+set_drive -min 0.847 -rise [get_ports {t_data_in[6]}]
+set_drive -min 0.490 -fall [get_ports {t_data_in[6]}]
+set_drive -min 0.847 -rise [get_ports {t_data_in[5]}]
+set_drive -min 0.490 -fall [get_ports {t_data_in[5]}]
+set_drive -min 0.847 -rise [get_ports {t_data_in[4]}]
+set_drive -min 0.490 -fall [get_ports {t_data_in[4]}]
+set_drive -min 0.847 -rise [get_ports {t_data_in[3]}]
+set_drive -min 0.490 -fall [get_ports {t_data_in[3]}]
+set_drive -min 0.847 -rise [get_ports {t_data_in[2]}]
+set_drive -min 0.490 -fall [get_ports {t_data_in[2]}]
+set_drive -min 0.847 -rise [get_ports {t_data_in[1]}]
+set_drive -min 0.490 -fall [get_ports {t_data_in[1]}]
+set_drive -min 0.847 -rise [get_ports {t_data_in[0]}]
+set_drive -min 0.490 -fall [get_ports {t_data_in[0]}]
+set_drive -min 0.847 -rise [get_ports {rom_data_in[15]}]
+set_drive -min 0.490 -fall [get_ports {rom_data_in[15]}]
+set_drive -min 0.847 -rise [get_ports {rom_data_in[14]}]
+set_drive -min 0.490 -fall [get_ports {rom_data_in[14]}]
+set_drive -min 0.847 -rise [get_ports {rom_data_in[13]}]
+set_drive -min 0.490 -fall [get_ports {rom_data_in[13]}]
+set_drive -min 0.847 -rise [get_ports {rom_data_in[12]}]
+set_drive -min 0.490 -fall [get_ports {rom_data_in[12]}]
+set_drive -min 0.847 -rise [get_ports {rom_data_in[11]}]
+set_drive -min 0.490 -fall [get_ports {rom_data_in[11]}]
+set_drive -min 0.847 -rise [get_ports {rom_data_in[10]}]
+set_drive -min 0.490 -fall [get_ports {rom_data_in[10]}]
+set_drive -min 0.847 -rise [get_ports {rom_data_in[9]}]
+set_drive -min 0.490 -fall [get_ports {rom_data_in[9]}]
+set_drive -min 0.847 -rise [get_ports {rom_data_in[8]}]
+set_drive -min 0.490 -fall [get_ports {rom_data_in[8]}]
+set_drive -min 0.847 -rise [get_ports {rom_data_in[7]}]
+set_drive -min 0.490 -fall [get_ports {rom_data_in[7]}]
+set_drive -min 0.847 -rise [get_ports {rom_data_in[6]}]
+set_drive -min 0.490 -fall [get_ports {rom_data_in[6]}]
+set_drive -min 0.847 -rise [get_ports {rom_data_in[5]}]
+set_drive -min 0.490 -fall [get_ports {rom_data_in[5]}]
+set_drive -min 0.847 -rise [get_ports {rom_data_in[4]}]
+set_drive -min 0.490 -fall [get_ports {rom_data_in[4]}]
+set_drive -min 0.847 -rise [get_ports {rom_data_in[3]}]
+set_drive -min 0.490 -fall [get_ports {rom_data_in[3]}]
+set_drive -min 0.847 -rise [get_ports {rom_data_in[2]}]
+set_drive -min 0.490 -fall [get_ports {rom_data_in[2]}]
+set_drive -min 0.847 -rise [get_ports {rom_data_in[1]}]
+set_drive -min 0.490 -fall [get_ports {rom_data_in[1]}]
+set_drive -min 0.847 -rise [get_ports {rom_data_in[0]}]
+set_drive -min 0.490 -fall [get_ports {rom_data_in[0]}]
+set_drive -min 0.847 -rise [get_ports {bus_grant}]
+set_drive -min 0.490 -fall [get_ports {bus_grant}]
+set_drive -min 0.086 -rise [get_ports {port_pad_data_in[15]}]
+set_drive -min 0.097 -fall [get_ports {port_pad_data_in[15]}]
+set_drive -min 0.086 -rise [get_ports {port_pad_data_in[14]}]
+set_drive -min 0.097 -fall [get_ports {port_pad_data_in[14]}]
+set_drive -min 0.086 -rise [get_ports {port_pad_data_in[13]}]
+set_drive -min 0.097 -fall [get_ports {port_pad_data_in[13]}]
+set_drive -min 0.086 -rise [get_ports {port_pad_data_in[12]}]
+set_drive -min 0.097 -fall [get_ports {port_pad_data_in[12]}]
+set_drive -min 0.086 -rise [get_ports {port_pad_data_in[11]}]
+set_drive -min 0.097 -fall [get_ports {port_pad_data_in[11]}]
+set_drive -min 0.086 -rise [get_ports {port_pad_data_in[10]}]
+set_drive -min 0.097 -fall [get_ports {port_pad_data_in[10]}]
+set_drive -min 0.086 -rise [get_ports {port_pad_data_in[9]}]
+set_drive -min 0.097 -fall [get_ports {port_pad_data_in[9]}]
+set_drive -min 0.086 -rise [get_ports {port_pad_data_in[8]}]
+set_drive -min 0.097 -fall [get_ports {port_pad_data_in[8]}]
+set_drive -min 0.086 -rise [get_ports {port_pad_data_in[7]}]
+set_drive -min 0.097 -fall [get_ports {port_pad_data_in[7]}]
+set_drive -min 0.086 -rise [get_ports {port_pad_data_in[6]}]
+set_drive -min 0.097 -fall [get_ports {port_pad_data_in[6]}]
+set_drive -min 0.086 -rise [get_ports {port_pad_data_in[5]}]
+set_drive -min 0.097 -fall [get_ports {port_pad_data_in[5]}]
+set_drive -min 0.086 -rise [get_ports {port_pad_data_in[4]}]
+set_drive -min 0.097 -fall [get_ports {port_pad_data_in[4]}]
+set_drive -min 0.086 -rise [get_ports {port_pad_data_in[3]}]
+set_drive -min 0.097 -fall [get_ports {port_pad_data_in[3]}]
+set_drive -min 0.086 -rise [get_ports {port_pad_data_in[2]}]
+set_drive -min 0.097 -fall [get_ports {port_pad_data_in[2]}]
+set_drive -min 0.086 -rise [get_ports {port_pad_data_in[1]}]
+set_drive -min 0.097 -fall [get_ports {port_pad_data_in[1]}]
+set_drive -min 0.086 -rise [get_ports {port_pad_data_in[0]}]
+set_drive -min 0.097 -fall [get_ports {port_pad_data_in[0]}]
+set_drive -min 0.847 -rise [get_ports {bio}]
+set_drive -min 0.490 -fall [get_ports {bio}]
+set_drive -min 0.086 -rise [get_ports {int}]
+set_drive -min 0.097 -fall [get_ports {int}]
+set_drive -min 0.157 -rise [get_ports {scan_en}]
+set_drive -min 0.116 -fall [get_ports {scan_en}]
+set_drive -min 0.847 -rise [get_ports {BG_scan_in}]
+set_drive -min 0.490 -fall [get_ports {BG_scan_in}]
+set_load -min -pin_load 0.019 [get_ports {as}]
+set_load -min -wire_load 0.012 [get_ports {as}]
+set_load -min -pin_load 0.023 [get_ports {read}]
+set_load -min -wire_load 0.009 [get_ports {read}]
+set_load -min -pin_load 0.016 [get_ports {write}]
+set_load -min -wire_load 0.097 [get_ports {write}]
+set_load -min -pin_load 0.027 [get_ports {address[7]}]
+set_load -min -wire_load 0.012 [get_ports {address[7]}]
+set_load -min -pin_load 0.024 [get_ports {address[6]}]
+set_load -min -wire_load 0.043 [get_ports {address[6]}]
+set_load -min -pin_load 0.024 [get_ports {address[5]}]
+set_load -min -wire_load 0.044 [get_ports {address[5]}]
+set_load -min -pin_load 0.024 [get_ports {address[4]}]
+set_load -min -wire_load 0.039 [get_ports {address[4]}]
+set_load -min -pin_load 0.027 [get_ports {address[3]}]
+set_load -min -wire_load 0.156 [get_ports {address[3]}]
+set_load -min -pin_load 0.027 [get_ports {address[2]}]
+set_load -min -wire_load 0.145 [get_ports {address[2]}]
+set_load -min -pin_load 0.027 [get_ports {address[1]}]
+set_load -min -wire_load 0.143 [get_ports {address[1]}]
+set_load -min -pin_load 0.027 [get_ports {address[0]}]
+set_load -min -wire_load 0.143 [get_ports {address[0]}]
+set_load -min -pin_load 0.017 [get_ports {t_data_out[15]}]
+set_load -min -wire_load 0.064 [get_ports {t_data_out[15]}]
+set_load -min -pin_load 0.019 [get_ports {t_data_out[14]}]
+set_load -min -wire_load 0.086 [get_ports {t_data_out[14]}]
+set_load -min -pin_load 0.026 [get_ports {t_data_out[13]}]
+set_load -min -wire_load 0.120 [get_ports {t_data_out[13]}]
+set_load -min -pin_load 0.027 [get_ports {t_data_out[12]}]
+set_load -min -wire_load 0.123 [get_ports {t_data_out[12]}]
+set_load -min -pin_load 0.021 [get_ports {t_data_out[11]}]
+set_load -min -wire_load 0.091 [get_ports {t_data_out[11]}]
+set_load -min -pin_load 0.021 [get_ports {t_data_out[10]}]
+set_load -min -wire_load 0.098 [get_ports {t_data_out[10]}]
+set_load -min -pin_load 0.019 [get_ports {t_data_out[9]}]
+set_load -min -wire_load 0.117 [get_ports {t_data_out[9]}]
+set_load -min -pin_load 0.027 [get_ports {t_data_out[8]}]
+set_load -min -wire_load 0.187 [get_ports {t_data_out[8]}]
+set_load -min -pin_load 0.019 [get_ports {t_data_out[7]}]
+set_load -min -wire_load 0.116 [get_ports {t_data_out[7]}]
+set_load -min -pin_load 0.018 [get_ports {t_data_out[6]}]
+set_load -min -wire_load 0.086 [get_ports {t_data_out[6]}]
+set_load -min -pin_load 0.027 [get_ports {t_data_out[5]}]
+set_load -min -wire_load 0.177 [get_ports {t_data_out[5]}]
+set_load -min -pin_load 0.027 [get_ports {t_data_out[4]}]
+set_load -min -wire_load 0.212 [get_ports {t_data_out[4]}]
+set_load -min -pin_load 0.027 [get_ports {t_data_out[3]}]
+set_load -min -wire_load 0.185 [get_ports {t_data_out[3]}]
+set_load -min -pin_load 0.027 [get_ports {t_data_out[2]}]
+set_load -min -wire_load 0.188 [get_ports {t_data_out[2]}]
+set_load -min -pin_load 0.027 [get_ports {t_data_out[1]}]
+set_load -min -wire_load 0.206 [get_ports {t_data_out[1]}]
+set_load -min -pin_load 0.027 [get_ports {t_data_out[0]}]
+set_load -min -wire_load 0.156 [get_ports {t_data_out[0]}]
+set_load -min -pin_load 0.019 [get_ports {p_read}]
+set_load -min -wire_load 0.012 [get_ports {p_read}]
+set_load -min -pin_load 0.027 [get_ports {p_address[8]}]
+set_load -min -wire_load 0.007 [get_ports {p_address[8]}]
+set_load -min -pin_load 0.027 [get_ports {p_address[7]}]
+set_load -min -wire_load 0.007 [get_ports {p_address[7]}]
+set_load -min -pin_load 0.027 [get_ports {p_address[6]}]
+set_load -min -wire_load 0.007 [get_ports {p_address[6]}]
+set_load -min -pin_load 0.027 [get_ports {p_address[5]}]
+set_load -min -wire_load 0.007 [get_ports {p_address[5]}]
+set_load -min -pin_load 0.027 [get_ports {p_address[4]}]
+set_load -min -wire_load 0.007 [get_ports {p_address[4]}]
+set_load -min -pin_load 0.027 [get_ports {p_address[3]}]
+set_load -min -wire_load 0.007 [get_ports {p_address[3]}]
+set_load -min -pin_load 0.027 [get_ports {p_address[2]}]
+set_load -min -wire_load 0.007 [get_ports {p_address[2]}]
+set_load -min -pin_load 0.027 [get_ports {p_address[1]}]
+set_load -min -wire_load 0.007 [get_ports {p_address[1]}]
+set_load -min -pin_load 0.027 [get_ports {p_address[0]}]
+set_load -min -wire_load 0.007 [get_ports {p_address[0]}]
+set_load -min -pin_load 0.027 [get_ports {bus_request}]
+set_load -min -wire_load 0.004 [get_ports {bus_request}]
+set_load -min -pin_load 0.030 [get_ports {port_as}]
+set_load -min -wire_load 0.001 [get_ports {port_as}]
+set_load -min -pin_load 0.015 [get_ports {port_address[2]}]
+set_load -min -wire_load 0.001 [get_ports {port_address[2]}]
+set_load -min -pin_load 0.013 [get_ports {port_address[1]}]
+set_load -min -wire_load 0.002 [get_ports {port_address[1]}]
+set_load -min -pin_load 0.012 [get_ports {port_address[0]}]
+set_load -min -wire_load 0.003 [get_ports {port_address[0]}]
+set_load -min -pin_load 0.027 [get_ports {port_pad_data_out[15]}]
+set_load -min -wire_load 0.085 [get_ports {port_pad_data_out[15]}]
+set_load -min -pin_load 0.027 [get_ports {port_pad_data_out[14]}]
+set_load -min -wire_load 0.071 [get_ports {port_pad_data_out[14]}]
+set_load -min -pin_load 0.027 [get_ports {port_pad_data_out[13]}]
+set_load -min -wire_load 0.055 [get_ports {port_pad_data_out[13]}]
+set_load -min -pin_load 0.027 [get_ports {port_pad_data_out[12]}]
+set_load -min -wire_load 0.051 [get_ports {port_pad_data_out[12]}]
+set_load -min -pin_load 0.027 [get_ports {port_pad_data_out[11]}]
+set_load -min -wire_load 0.084 [get_ports {port_pad_data_out[11]}]
+set_load -min -pin_load 0.027 [get_ports {port_pad_data_out[10]}]
+set_load -min -wire_load 0.109 [get_ports {port_pad_data_out[10]}]
+set_load -min -pin_load 0.027 [get_ports {port_pad_data_out[9]}]
+set_load -min -wire_load 0.092 [get_ports {port_pad_data_out[9]}]
+set_load -min -pin_load 0.027 [get_ports {port_pad_data_out[8]}]
+set_load -min -wire_load 0.094 [get_ports {port_pad_data_out[8]}]
+set_load -min -pin_load 0.027 [get_ports {port_pad_data_out[7]}]
+set_load -min -wire_load 0.092 [get_ports {port_pad_data_out[7]}]
+set_load -min -pin_load 0.027 [get_ports {port_pad_data_out[6]}]
+set_load -min -wire_load 0.075 [get_ports {port_pad_data_out[6]}]
+set_load -min -pin_load 0.027 [get_ports {port_pad_data_out[5]}]
+set_load -min -wire_load 0.048 [get_ports {port_pad_data_out[5]}]
+set_load -min -pin_load 0.027 [get_ports {port_pad_data_out[4]}]
+set_load -min -wire_load 0.044 [get_ports {port_pad_data_out[4]}]
+set_load -min -pin_load 0.027 [get_ports {port_pad_data_out[3]}]
+set_load -min -wire_load 0.048 [get_ports {port_pad_data_out[3]}]
+set_load -min -pin_load 0.027 [get_ports {port_pad_data_out[2]}]
+set_load -min -wire_load 0.047 [get_ports {port_pad_data_out[2]}]
+set_load -min -pin_load 0.027 [get_ports {port_pad_data_out[1]}]
+set_load -min -wire_load 0.070 [get_ports {port_pad_data_out[1]}]
+set_load -min -pin_load 0.043 [get_ports {port_pad_data_out[0]}]
+set_load -min -wire_load 0.082 [get_ports {port_pad_data_out[0]}]
+set_load -min -pin_load 0.013 [get_ports {BG_scan_out}]
+set_load -min -wire_load 0.002 [get_ports {BG_scan_out}]
+set_max_capacitance 0.031 [get_ports {clk}]
+set_max_capacitance 0.623 [get_ports {reset}]
+set_max_capacitance 0.031 [get_ports {t_data_in[15]}]
+set_max_capacitance 0.031 [get_ports {t_data_in[14]}]
+set_max_capacitance 0.031 [get_ports {t_data_in[13]}]
+set_max_capacitance 0.031 [get_ports {t_data_in[12]}]
+set_max_capacitance 0.031 [get_ports {t_data_in[11]}]
+set_max_capacitance 0.031 [get_ports {t_data_in[10]}]
+set_max_capacitance 0.031 [get_ports {t_data_in[9]}]
+set_max_capacitance 0.031 [get_ports {t_data_in[8]}]
+set_max_capacitance 0.031 [get_ports {t_data_in[7]}]
+set_max_capacitance 0.031 [get_ports {t_data_in[6]}]
+set_max_capacitance 0.031 [get_ports {t_data_in[5]}]
+set_max_capacitance 0.031 [get_ports {t_data_in[4]}]
+set_max_capacitance 0.031 [get_ports {t_data_in[3]}]
+set_max_capacitance 0.031 [get_ports {t_data_in[2]}]
+set_max_capacitance 0.031 [get_ports {t_data_in[1]}]
+set_max_capacitance 0.031 [get_ports {t_data_in[0]}]
+set_max_capacitance 0.055 [get_ports {rom_data_in[15]}]
+set_max_capacitance 0.055 [get_ports {rom_data_in[14]}]
+set_max_capacitance 0.055 [get_ports {rom_data_in[13]}]
+set_max_capacitance 0.055 [get_ports {rom_data_in[12]}]
+set_max_capacitance 0.055 [get_ports {rom_data_in[11]}]
+set_max_capacitance 0.055 [get_ports {rom_data_in[10]}]
+set_max_capacitance 0.055 [get_ports {rom_data_in[9]}]
+set_max_capacitance 0.055 [get_ports {rom_data_in[8]}]
+set_max_capacitance 0.055 [get_ports {rom_data_in[7]}]
+set_max_capacitance 0.055 [get_ports {rom_data_in[6]}]
+set_max_capacitance 0.055 [get_ports {rom_data_in[5]}]
+set_max_capacitance 0.055 [get_ports {rom_data_in[4]}]
+set_max_capacitance 0.055 [get_ports {rom_data_in[3]}]
+set_max_capacitance 0.055 [get_ports {rom_data_in[2]}]
+set_max_capacitance 0.055 [get_ports {rom_data_in[1]}]
+set_max_capacitance 0.055 [get_ports {rom_data_in[0]}]
+set_max_capacitance 0.031 [get_ports {bus_grant}]
+set_max_capacitance 0.623 [get_ports {port_pad_data_in[15]}]
+set_max_capacitance 0.623 [get_ports {port_pad_data_in[14]}]
+set_max_capacitance 0.623 [get_ports {port_pad_data_in[13]}]
+set_max_capacitance 0.623 [get_ports {port_pad_data_in[12]}]
+set_max_capacitance 0.623 [get_ports {port_pad_data_in[11]}]
+set_max_capacitance 0.623 [get_ports {port_pad_data_in[10]}]
+set_max_capacitance 0.623 [get_ports {port_pad_data_in[9]}]
+set_max_capacitance 0.623 [get_ports {port_pad_data_in[8]}]
+set_max_capacitance 0.623 [get_ports {port_pad_data_in[7]}]
+set_max_capacitance 0.623 [get_ports {port_pad_data_in[6]}]
+set_max_capacitance 0.623 [get_ports {port_pad_data_in[5]}]
+set_max_capacitance 0.623 [get_ports {port_pad_data_in[4]}]
+set_max_capacitance 0.623 [get_ports {port_pad_data_in[3]}]
+set_max_capacitance 0.623 [get_ports {port_pad_data_in[2]}]
+set_max_capacitance 0.623 [get_ports {port_pad_data_in[1]}]
+set_max_capacitance 0.623 [get_ports {port_pad_data_in[0]}]
+set_max_capacitance 0.031 [get_ports {bio}]
+set_max_capacitance 0.623 [get_ports {int}]
+set_max_capacitance 0.623 [get_ports {scan_en}]
+set_max_capacitance 0.031 [get_ports {BG_scan_in}]
+set_max_transition 2.700 [current_design]
+set_max_transition 2.300 [get_ports {clk}]
+set_max_transition 2.300 [get_ports {reset}]
+set_max_transition 2.300 [get_ports {t_data_in[15]}]
+set_max_transition 2.300 [get_ports {t_data_in[14]}]
+set_max_transition 2.300 [get_ports {t_data_in[13]}]
+set_max_transition 2.300 [get_ports {t_data_in[12]}]
+set_max_transition 2.300 [get_ports {t_data_in[11]}]
+set_max_transition 2.300 [get_ports {t_data_in[10]}]
+set_max_transition 2.300 [get_ports {t_data_in[9]}]
+set_max_transition 2.300 [get_ports {t_data_in[8]}]
+set_max_transition 2.300 [get_ports {t_data_in[7]}]
+set_max_transition 2.300 [get_ports {t_data_in[6]}]
+set_max_transition 2.300 [get_ports {t_data_in[5]}]
+set_max_transition 2.300 [get_ports {t_data_in[4]}]
+set_max_transition 2.300 [get_ports {t_data_in[3]}]
+set_max_transition 2.300 [get_ports {t_data_in[2]}]
+set_max_transition 2.300 [get_ports {t_data_in[1]}]
+set_max_transition 2.300 [get_ports {t_data_in[0]}]
+set_max_transition 2.300 [get_ports {rom_data_in[15]}]
+set_max_transition 2.300 [get_ports {rom_data_in[14]}]
+set_max_transition 2.300 [get_ports {rom_data_in[13]}]
+set_max_transition 2.300 [get_ports {rom_data_in[12]}]
+set_max_transition 2.300 [get_ports {rom_data_in[11]}]
+set_max_transition 2.300 [get_ports {rom_data_in[10]}]
+set_max_transition 2.300 [get_ports {rom_data_in[9]}]
+set_max_transition 2.300 [get_ports {rom_data_in[8]}]
+set_max_transition 2.300 [get_ports {rom_data_in[7]}]
+set_max_transition 2.300 [get_ports {rom_data_in[6]}]
+set_max_transition 2.300 [get_ports {rom_data_in[5]}]
+set_max_transition 2.300 [get_ports {rom_data_in[4]}]
+set_max_transition 2.300 [get_ports {rom_data_in[3]}]
+set_max_transition 2.300 [get_ports {rom_data_in[2]}]
+set_max_transition 2.300 [get_ports {rom_data_in[1]}]
+set_max_transition 2.300 [get_ports {rom_data_in[0]}]
+set_max_transition 2.300 [get_ports {bus_grant}]
+set_max_transition 2.300 [get_ports {port_pad_data_in[15]}]
+set_max_transition 2.300 [get_ports {port_pad_data_in[14]}]
+set_max_transition 2.300 [get_ports {port_pad_data_in[13]}]
+set_max_transition 2.300 [get_ports {port_pad_data_in[12]}]
+set_max_transition 2.300 [get_ports {port_pad_data_in[11]}]
+set_max_transition 2.300 [get_ports {port_pad_data_in[10]}]
+set_max_transition 2.300 [get_ports {port_pad_data_in[9]}]
+set_max_transition 2.300 [get_ports {port_pad_data_in[8]}]
+set_max_transition 2.300 [get_ports {port_pad_data_in[7]}]
+set_max_transition 2.300 [get_ports {port_pad_data_in[6]}]
+set_max_transition 2.300 [get_ports {port_pad_data_in[5]}]
+set_max_transition 2.300 [get_ports {port_pad_data_in[4]}]
+set_max_transition 2.300 [get_ports {port_pad_data_in[3]}]
+set_max_transition 2.300 [get_ports {port_pad_data_in[2]}]
+set_max_transition 2.300 [get_ports {port_pad_data_in[1]}]
+set_max_transition 2.300 [get_ports {port_pad_data_in[0]}]
+set_max_transition 2.300 [get_ports {bio}]
+set_max_transition 2.300 [get_ports {int}]
+set_max_transition 2.300 [get_ports {scan_en}]
+set_max_transition 2.300 [get_ports {BG_scan_in}]
+set_max_transition 2.300 [get_ports {as}]
+set_max_transition 2.300 [get_ports {read}]
+set_max_transition 2.300 [get_ports {write}]
+set_max_transition 2.300 [get_ports {address[7]}]
+set_max_transition 2.300 [get_ports {address[6]}]
+set_max_transition 2.300 [get_ports {address[5]}]
+set_max_transition 2.300 [get_ports {address[4]}]
+set_max_transition 2.300 [get_ports {address[3]}]
+set_max_transition 2.300 [get_ports {address[2]}]
+set_max_transition 2.300 [get_ports {address[1]}]
+set_max_transition 2.300 [get_ports {address[0]}]
+set_max_transition 2.300 [get_ports {t_data_out[15]}]
+set_max_transition 2.300 [get_ports {t_data_out[14]}]
+set_max_transition 2.300 [get_ports {t_data_out[13]}]
+set_max_transition 2.300 [get_ports {t_data_out[12]}]
+set_max_transition 2.300 [get_ports {t_data_out[11]}]
+set_max_transition 2.300 [get_ports {t_data_out[10]}]
+set_max_transition 2.300 [get_ports {t_data_out[9]}]
+set_max_transition 2.300 [get_ports {t_data_out[8]}]
+set_max_transition 2.300 [get_ports {t_data_out[7]}]
+set_max_transition 2.300 [get_ports {t_data_out[6]}]
+set_max_transition 2.300 [get_ports {t_data_out[5]}]
+set_max_transition 2.300 [get_ports {t_data_out[4]}]
+set_max_transition 2.300 [get_ports {t_data_out[3]}]
+set_max_transition 2.300 [get_ports {t_data_out[2]}]
+set_max_transition 2.300 [get_ports {t_data_out[1]}]
+set_max_transition 2.300 [get_ports {t_data_out[0]}]
+set_max_transition 2.300 [get_ports {p_read}]
+set_max_transition 2.300 [get_ports {p_address[8]}]
+set_max_transition 2.300 [get_ports {p_address[7]}]
+set_max_transition 2.300 [get_ports {p_address[6]}]
+set_max_transition 2.300 [get_ports {p_address[5]}]
+set_max_transition 2.300 [get_ports {p_address[4]}]
+set_max_transition 2.300 [get_ports {p_address[3]}]
+set_max_transition 2.300 [get_ports {p_address[2]}]
+set_max_transition 2.300 [get_ports {p_address[1]}]
+set_max_transition 2.300 [get_ports {p_address[0]}]
+set_max_transition 2.300 [get_ports {bus_request}]
+set_max_transition 2.300 [get_ports {port_as}]
+set_max_transition 2.300 [get_ports {port_address[2]}]
+set_max_transition 2.300 [get_ports {port_address[1]}]
+set_max_transition 2.300 [get_ports {port_address[0]}]
+set_max_transition 2.300 [get_ports {port_pad_data_out[15]}]
+set_max_transition 2.300 [get_ports {port_pad_data_out[14]}]
+set_max_transition 2.300 [get_ports {port_pad_data_out[13]}]
+set_max_transition 2.300 [get_ports {port_pad_data_out[12]}]
+set_max_transition 2.300 [get_ports {port_pad_data_out[11]}]
+set_max_transition 2.300 [get_ports {port_pad_data_out[10]}]
+set_max_transition 2.300 [get_ports {port_pad_data_out[9]}]
+set_max_transition 2.300 [get_ports {port_pad_data_out[8]}]
+set_max_transition 2.300 [get_ports {port_pad_data_out[7]}]
+set_max_transition 2.300 [get_ports {port_pad_data_out[6]}]
+set_max_transition 2.300 [get_ports {port_pad_data_out[5]}]
+set_max_transition 2.300 [get_ports {port_pad_data_out[4]}]
+set_max_transition 2.300 [get_ports {port_pad_data_out[3]}]
+set_max_transition 2.300 [get_ports {port_pad_data_out[2]}]
+set_max_transition 2.300 [get_ports {port_pad_data_out[1]}]
+set_max_transition 2.300 [get_ports {port_pad_data_out[0]}]
+set_max_transition 2.300 [get_ports {BG_scan_out}]
+set_max_fanout 15.000 [current_design]
+set_fanout_load 1.000 [get_ports {as}]
+set_fanout_load 1.000 [get_ports {read}]
+set_fanout_load 1.000 [get_ports {write}]
+set_fanout_load 1.000 [get_ports {address[7]}]
+set_fanout_load 1.000 [get_ports {address[6]}]
+set_fanout_load 1.000 [get_ports {address[5]}]
+set_fanout_load 1.000 [get_ports {address[4]}]
+set_fanout_load 1.000 [get_ports {address[3]}]
+set_fanout_load 1.000 [get_ports {address[2]}]
+set_fanout_load 1.000 [get_ports {address[1]}]
+set_fanout_load 1.000 [get_ports {address[0]}]
+set_fanout_load 1.000 [get_ports {t_data_out[15]}]
+set_fanout_load 1.000 [get_ports {t_data_out[14]}]
+set_fanout_load 1.000 [get_ports {t_data_out[13]}]
+set_fanout_load 1.000 [get_ports {t_data_out[12]}]
+set_fanout_load 1.000 [get_ports {t_data_out[11]}]
+set_fanout_load 1.000 [get_ports {t_data_out[10]}]
+set_fanout_load 1.000 [get_ports {t_data_out[9]}]
+set_fanout_load 1.000 [get_ports {t_data_out[8]}]
+set_fanout_load 1.000 [get_ports {t_data_out[7]}]
+set_fanout_load 1.000 [get_ports {t_data_out[6]}]
+set_fanout_load 1.000 [get_ports {t_data_out[5]}]
+set_fanout_load 1.000 [get_ports {t_data_out[4]}]
+set_fanout_load 1.000 [get_ports {t_data_out[3]}]
+set_fanout_load 1.000 [get_ports {t_data_out[2]}]
+set_fanout_load 1.000 [get_ports {t_data_out[1]}]
+set_fanout_load 1.000 [get_ports {t_data_out[0]}]
+set_fanout_load 1.000 [get_ports {p_read}]
+set_fanout_load 1.000 [get_ports {p_address[8]}]
+set_fanout_load 1.000 [get_ports {p_address[7]}]
+set_fanout_load 1.000 [get_ports {p_address[6]}]
+set_fanout_load 1.000 [get_ports {p_address[5]}]
+set_fanout_load 1.000 [get_ports {p_address[4]}]
+set_fanout_load 1.000 [get_ports {p_address[3]}]
+set_fanout_load 1.000 [get_ports {p_address[2]}]
+set_fanout_load 1.000 [get_ports {p_address[1]}]
+set_fanout_load 1.000 [get_ports {p_address[0]}]
+set_fanout_load 1.000 [get_ports {bus_request}]
+set_fanout_load 1.000 [get_ports {port_as}]
+set_fanout_load 1.000 [get_ports {port_address[2]}]
+set_fanout_load 1.000 [get_ports {port_address[1]}]
+set_fanout_load 1.000 [get_ports {port_address[0]}]
+set_fanout_load 0.062 [get_ports {port_pad_data_out[15]}]
+set_fanout_load 0.062 [get_ports {port_pad_data_out[14]}]
+set_fanout_load 0.062 [get_ports {port_pad_data_out[13]}]
+set_fanout_load 0.062 [get_ports {port_pad_data_out[12]}]
+set_fanout_load 0.062 [get_ports {port_pad_data_out[11]}]
+set_fanout_load 0.062 [get_ports {port_pad_data_out[10]}]
+set_fanout_load 0.062 [get_ports {port_pad_data_out[9]}]
+set_fanout_load 0.062 [get_ports {port_pad_data_out[8]}]
+set_fanout_load 0.062 [get_ports {port_pad_data_out[7]}]
+set_fanout_load 0.062 [get_ports {port_pad_data_out[6]}]
+set_fanout_load 0.062 [get_ports {port_pad_data_out[5]}]
+set_fanout_load 0.062 [get_ports {port_pad_data_out[4]}]
+set_fanout_load 0.062 [get_ports {port_pad_data_out[3]}]
+set_fanout_load 0.062 [get_ports {port_pad_data_out[2]}]
+set_fanout_load 0.062 [get_ports {port_pad_data_out[1]}]
+set_fanout_load 0.062 [get_ports {port_pad_data_out[0]}]
+set_fanout_load 1.000 [get_ports {BG_scan_out}]
+set_false_path -setup -from [get_ports {reset}]
+set_false_path -setup -from [get_ports {rom_data_in[15]}]
+set_false_path -setup -from [get_ports {rom_data_in[14]}]
+set_false_path -setup -from [get_ports {rom_data_in[13]}]
+set_false_path -setup -from [get_ports {rom_data_in[12]}]
+set_false_path -setup -from [get_ports {rom_data_in[11]}]
+set_false_path -setup -from [get_ports {rom_data_in[10]}]
+set_false_path -setup -from [get_ports {rom_data_in[9]}]
+set_false_path -setup -from [get_ports {rom_data_in[8]}]
+set_false_path -setup -from [get_ports {rom_data_in[7]}]
+set_false_path -setup -from [get_ports {rom_data_in[6]}]
+set_false_path -setup -from [get_ports {rom_data_in[5]}]
+set_false_path -setup -from [get_ports {rom_data_in[4]}]
+set_false_path -setup -from [get_ports {rom_data_in[3]}]
+set_false_path -setup -from [get_ports {rom_data_in[2]}]
+set_false_path -setup -from [get_ports {rom_data_in[1]}]
+set_false_path -setup -from [get_ports {rom_data_in[0]}]
+set_false_path -setup -from [get_ports {bus_grant}]
+set_false_path -setup -from [get_ports {port_pad_data_in[15]}]
+set_false_path -setup -from [get_ports {port_pad_data_in[14]}]
+set_false_path -setup -from [get_ports {port_pad_data_in[13]}]
+set_false_path -setup -from [get_ports {port_pad_data_in[12]}]
+set_false_path -setup -from [get_ports {port_pad_data_in[11]}]
+set_false_path -setup -from [get_ports {port_pad_data_in[10]}]
+set_false_path -setup -from [get_ports {port_pad_data_in[9]}]
+set_false_path -setup -from [get_ports {port_pad_data_in[8]}]
+set_false_path -setup -from [get_ports {port_pad_data_in[7]}]
+set_false_path -setup -from [get_ports {port_pad_data_in[6]}]
+set_false_path -setup -from [get_ports {port_pad_data_in[5]}]
+set_false_path -setup -from [get_ports {port_pad_data_in[4]}]
+set_false_path -setup -from [get_ports {port_pad_data_in[3]}]
+set_false_path -setup -from [get_ports {port_pad_data_in[2]}]
+set_false_path -setup -from [get_ports {port_pad_data_in[1]}]
+set_false_path -setup -from [get_ports {port_pad_data_in[0]}]
+set_false_path -setup -from [get_ports {bio}]
+set_false_path -setup -from [get_ports {int}]
+set_false_path -setup -from [get_ports {BG_scan_in}]
+set_false_path -setup -to [get_ports {read}]
+set_false_path -setup -to [get_ports {address[3]}]
+set_false_path -setup -to [get_ports {address[2]}]
+set_false_path -setup -to [get_ports {address[1]}]
+set_false_path -setup -to [get_ports {address[0]}]
+set_false_path -setup -to [get_ports {t_data_out[15]}]
+set_false_path -setup -to [get_ports {t_data_out[14]}]
+set_false_path -setup -to [get_ports {t_data_out[13]}]
+set_false_path -setup -to [get_ports {t_data_out[12]}]
+set_false_path -setup -to [get_ports {t_data_out[11]}]
+set_false_path -setup -to [get_ports {t_data_out[10]}]
+set_false_path -setup -to [get_ports {t_data_out[9]}]
+set_false_path -setup -to [get_ports {t_data_out[8]}]
+set_false_path -setup -to [get_ports {t_data_out[7]}]
+set_false_path -setup -to [get_ports {t_data_out[6]}]
+set_false_path -setup -to [get_ports {t_data_out[5]}]
+set_false_path -setup -to [get_ports {t_data_out[4]}]
+set_false_path -setup -to [get_ports {t_data_out[3]}]
+set_false_path -setup -to [get_ports {t_data_out[2]}]
+set_false_path -setup -to [get_ports {t_data_out[1]}]
+set_false_path -setup -to [get_ports {t_data_out[0]}]
+set_false_path -setup -to [get_ports {p_read}]
+set_false_path -setup -to [get_ports {p_address[8]}]
+set_false_path -setup -to [get_ports {p_address[7]}]
+set_false_path -setup -to [get_ports {p_address[6]}]
+set_false_path -setup -to [get_ports {p_address[5]}]
+set_false_path -setup -to [get_ports {p_address[4]}]
+set_false_path -setup -to [get_ports {p_address[3]}]
+set_false_path -setup -to [get_ports {p_address[2]}]
+set_false_path -setup -to [get_ports {p_address[1]}]
+set_false_path -setup -to [get_ports {p_address[0]}]
+set_false_path -setup -to [get_ports {bus_request}]
+set_false_path -setup -to [get_ports {port_address[0]}]
+set_false_path -setup -to [get_ports {port_pad_data_out[15]}]
+set_false_path -setup -to [get_ports {port_pad_data_out[14]}]
+set_false_path -setup -to [get_ports {port_pad_data_out[13]}]
+set_false_path -setup -to [get_ports {port_pad_data_out[12]}]
+set_false_path -setup -to [get_ports {port_pad_data_out[11]}]
+set_false_path -setup -to [get_ports {port_pad_data_out[10]}]
+set_false_path -setup -to [get_ports {port_pad_data_out[9]}]
+set_false_path -setup -to [get_ports {port_pad_data_out[8]}]
+set_false_path -setup -to [get_ports {port_pad_data_out[7]}]
+set_false_path -setup -to [get_ports {port_pad_data_out[6]}]
+set_false_path -setup -to [get_ports {port_pad_data_out[5]}]
+set_false_path -setup -to [get_ports {port_pad_data_out[4]}]
+set_false_path -setup -to [get_ports {port_pad_data_out[3]}]
+set_false_path -setup -to [get_ports {port_pad_data_out[2]}]
+set_false_path -setup -to [get_ports {port_pad_data_out[1]}]
+set_false_path -setup -to [get_ports {port_pad_data_out[0]}]
+set_false_path -setup -to [get_ports {BG_scan_out}]
+set_false_path -hold -from [get_ports {reset}]
+set_false_path -hold -from [get_ports {t_data_in[15]}]
+set_false_path -hold -from [get_ports {t_data_in[14]}]
+set_false_path -hold -from [get_ports {t_data_in[13]}]
+set_false_path -hold -from [get_ports {t_data_in[12]}]
+set_false_path -hold -from [get_ports {t_data_in[11]}]
+set_false_path -hold -from [get_ports {t_data_in[10]}]
+set_false_path -hold -from [get_ports {t_data_in[9]}]
+set_false_path -hold -from [get_ports {t_data_in[8]}]
+set_false_path -hold -from [get_ports {t_data_in[7]}]
+set_false_path -hold -from [get_ports {t_data_in[6]}]
+set_false_path -hold -from [get_ports {t_data_in[5]}]
+set_false_path -hold -from [get_ports {t_data_in[4]}]
+set_false_path -hold -from [get_ports {t_data_in[3]}]
+set_false_path -hold -from [get_ports {t_data_in[2]}]
+set_false_path -hold -from [get_ports {t_data_in[1]}]
+set_false_path -hold -from [get_ports {t_data_in[0]}]
+set_false_path -hold -from [get_ports {rom_data_in[15]}]
+set_false_path -hold -from [get_ports {rom_data_in[14]}]
+set_false_path -hold -from [get_ports {rom_data_in[13]}]
+set_false_path -hold -from [get_ports {rom_data_in[12]}]
+set_false_path -hold -from [get_ports {rom_data_in[11]}]
+set_false_path -hold -from [get_ports {rom_data_in[10]}]
+set_false_path -hold -from [get_ports {rom_data_in[9]}]
+set_false_path -hold -from [get_ports {rom_data_in[8]}]
+set_false_path -hold -from [get_ports {rom_data_in[7]}]
+set_false_path -hold -from [get_ports {rom_data_in[6]}]
+set_false_path -hold -from [get_ports {rom_data_in[5]}]
+set_false_path -hold -from [get_ports {rom_data_in[4]}]
+set_false_path -hold -from [get_ports {rom_data_in[3]}]
+set_false_path -hold -from [get_ports {rom_data_in[2]}]
+set_false_path -hold -from [get_ports {rom_data_in[1]}]
+set_false_path -hold -from [get_ports {rom_data_in[0]}]
+set_false_path -hold -from [get_ports {bus_grant}]
+set_false_path -hold -from [get_ports {port_pad_data_in[15]}]
+set_false_path -hold -from [get_ports {port_pad_data_in[14]}]
+set_false_path -hold -from [get_ports {port_pad_data_in[13]}]
+set_false_path -hold -from [get_ports {port_pad_data_in[12]}]
+set_false_path -hold -from [get_ports {port_pad_data_in[11]}]
+set_false_path -hold -from [get_ports {port_pad_data_in[10]}]
+set_false_path -hold -from [get_ports {port_pad_data_in[9]}]
+set_false_path -hold -from [get_ports {port_pad_data_in[8]}]
+set_false_path -hold -from [get_ports {port_pad_data_in[7]}]
+set_false_path -hold -from [get_ports {port_pad_data_in[6]}]
+set_false_path -hold -from [get_ports {port_pad_data_in[5]}]
+set_false_path -hold -from [get_ports {port_pad_data_in[4]}]
+set_false_path -hold -from [get_ports {port_pad_data_in[3]}]
+set_false_path -hold -from [get_ports {port_pad_data_in[2]}]
+set_false_path -hold -from [get_ports {port_pad_data_in[1]}]
+set_false_path -hold -from [get_ports {port_pad_data_in[0]}]
+set_false_path -hold -from [get_ports {bio}]
+set_false_path -hold -from [get_ports {int}]
+set_false_path -hold -from [get_ports {BG_scan_in}]
+set_false_path -hold -to [get_ports {read}]
+set_false_path -hold -to [get_ports {address[3]}]
+set_false_path -hold -to [get_ports {address[2]}]
+set_false_path -hold -to [get_ports {address[1]}]
+set_false_path -hold -to [get_ports {address[0]}]
+set_false_path -hold -to [get_ports {t_data_out[15]}]
+set_false_path -hold -to [get_ports {t_data_out[14]}]
+set_false_path -hold -to [get_ports {t_data_out[13]}]
+set_false_path -hold -to [get_ports {t_data_out[12]}]
+set_false_path -hold -to [get_ports {t_data_out[11]}]
+set_false_path -hold -to [get_ports {t_data_out[10]}]
+set_false_path -hold -to [get_ports {t_data_out[9]}]
+set_false_path -hold -to [get_ports {t_data_out[8]}]
+set_false_path -hold -to [get_ports {t_data_out[7]}]
+set_false_path -hold -to [get_ports {t_data_out[6]}]
+set_false_path -hold -to [get_ports {t_data_out[5]}]
+set_false_path -hold -to [get_ports {t_data_out[4]}]
+set_false_path -hold -to [get_ports {t_data_out[3]}]
+set_false_path -hold -to [get_ports {t_data_out[2]}]
+set_false_path -hold -to [get_ports {t_data_out[1]}]
+set_false_path -hold -to [get_ports {t_data_out[0]}]
+set_false_path -hold -to [get_ports {p_read}]
+set_false_path -hold -to [get_ports {p_address[8]}]
+set_false_path -hold -to [get_ports {p_address[7]}]
+set_false_path -hold -to [get_ports {p_address[6]}]
+set_false_path -hold -to [get_ports {p_address[5]}]
+set_false_path -hold -to [get_ports {p_address[4]}]
+set_false_path -hold -to [get_ports {p_address[3]}]
+set_false_path -hold -to [get_ports {p_address[2]}]
+set_false_path -hold -to [get_ports {p_address[1]}]
+set_false_path -hold -to [get_ports {p_address[0]}]
+set_false_path -hold -to [get_ports {bus_request}]
+set_false_path -hold -to [get_ports {port_address[0]}]
+set_false_path -hold -to [get_ports {port_pad_data_out[15]}]
+set_false_path -hold -to [get_ports {port_pad_data_out[14]}]
+set_false_path -hold -to [get_ports {port_pad_data_out[13]}]
+set_false_path -hold -to [get_ports {port_pad_data_out[12]}]
+set_false_path -hold -to [get_ports {port_pad_data_out[11]}]
+set_false_path -hold -to [get_ports {port_pad_data_out[10]}]
+set_false_path -hold -to [get_ports {port_pad_data_out[9]}]
+set_false_path -hold -to [get_ports {port_pad_data_out[8]}]
+set_false_path -hold -to [get_ports {port_pad_data_out[7]}]
+set_false_path -hold -to [get_ports {port_pad_data_out[6]}]
+set_false_path -hold -to [get_ports {port_pad_data_out[5]}]
+set_false_path -hold -to [get_ports {port_pad_data_out[4]}]
+set_false_path -hold -to [get_ports {port_pad_data_out[3]}]
+set_false_path -hold -to [get_ports {port_pad_data_out[2]}]
+set_false_path -hold -to [get_ports {port_pad_data_out[1]}]
+set_false_path -hold -to [get_ports {port_pad_data_out[0]}]
+set_false_path -hold -to [get_ports {BG_scan_out}]
+set_case_analysis 0 [get_ports {scan_en}]
+
+#/**********************************************************************
+# * Constraint pushed down from top level constraint file /home/vinita/SoCE5.2/SoC5.2LabTest/SOCE_5_2/data/dtmf_chip.sdc
+# **********************************************************************/
+set_false_path -hold \
+  -from [list [get_clocks {vclk2_virtual_setuphold_0}] \
+[get_clocks {vclk2}] ] \
+  -to [list [get_clocks {vclk1_virtual_setuphold_0}] \
+[get_clocks {vclk1}] ] 
+set_clock_uncertainty 0.250 \
+  -from [list [get_clocks {vclk2_virtual_setuphold_0}] \
+[get_clocks {vclk2}] \
+[get_clocks {vclk1_virtual_setuphold_0}] \
+[get_clocks {vclk1}] ] \
+  -to [list [get_clocks {vclk2_virtual_setuphold_0}] \
+[get_clocks {vclk2}] \
+[get_clocks {vclk1_virtual_setuphold_0}] \
+[get_clocks {vclk1}] ] 
+set_false_path \
+  -from [list [get_clocks {vclk1_virtual_setuphold_0}] \
+[get_clocks {vclk1}] ] 
+set_multicycle_path 2 -setup -start \
+  -to [list [get_pins {EXECUTE_INST/p_reg_31/D}] \
+[get_pins {EXECUTE_INST/p_reg_31/E}] \
+[get_pins {EXECUTE_INST/p_reg_30/D}] \
+[get_pins {EXECUTE_INST/p_reg_30/E}] \
+[get_pins {EXECUTE_INST/p_reg_29/D}] \
+[get_pins {EXECUTE_INST/p_reg_29/E}] \
+[get_pins {EXECUTE_INST/p_reg_28/D}] \
+[get_pins {EXECUTE_INST/p_reg_28/E}] \
+[get_pins {EXECUTE_INST/p_reg_27/D}] \
+[get_pins {EXECUTE_INST/p_reg_27/E}] \
+[get_pins {EXECUTE_INST/p_reg_26/D}] \
+[get_pins {EXECUTE_INST/p_reg_26/E}] \
+[get_pins {EXECUTE_INST/p_reg_25/D}] \
+[get_pins {EXECUTE_INST/p_reg_25/E}] \
+[get_pins {EXECUTE_INST/p_reg_24/D}] \
+[get_pins {EXECUTE_INST/p_reg_24/E}] \
+[get_pins {EXECUTE_INST/p_reg_23/D}] \
+[get_pins {EXECUTE_INST/p_reg_23/E}] \
+[get_pins {EXECUTE_INST/p_reg_22/D}] \
+[get_pins {EXECUTE_INST/p_reg_22/E}] \
+[get_pins {EXECUTE_INST/p_reg_21/D}] \
+[get_pins {EXECUTE_INST/p_reg_21/E}] \
+[get_pins {EXECUTE_INST/p_reg_20/D}] \
+[get_pins {EXECUTE_INST/p_reg_20/E}] \
+[get_pins {EXECUTE_INST/p_reg_19/D}] \
+[get_pins {EXECUTE_INST/p_reg_19/E}] \
+[get_pins {EXECUTE_INST/p_reg_18/D}] \
+[get_pins {EXECUTE_INST/p_reg_18/E}] \
+[get_pins {EXECUTE_INST/p_reg_17/D}] \
+[get_pins {EXECUTE_INST/p_reg_17/E}] \
+[get_pins {EXECUTE_INST/p_reg_16/D}] \
+[get_pins {EXECUTE_INST/p_reg_16/E}] \
+[get_pins {EXECUTE_INST/p_reg_15/D}] \
+[get_pins {EXECUTE_INST/p_reg_15/E}] \
+[get_pins {EXECUTE_INST/p_reg_14/D}] \
+[get_pins {EXECUTE_INST/p_reg_14/E}] \
+[get_pins {EXECUTE_INST/p_reg_13/D}] \
+[get_pins {EXECUTE_INST/p_reg_13/E}] \
+[get_pins {EXECUTE_INST/p_reg_12/D}] \
+[get_pins {EXECUTE_INST/p_reg_12/E}] \
+[get_pins {EXECUTE_INST/p_reg_11/D}] \
+[get_pins {EXECUTE_INST/p_reg_11/E}] \
+[get_pins {EXECUTE_INST/p_reg_10/D}] \
+[get_pins {EXECUTE_INST/p_reg_10/E}] \
+[get_pins {EXECUTE_INST/p_reg_9/D}] \
+[get_pins {EXECUTE_INST/p_reg_9/E}] \
+[get_pins {EXECUTE_INST/p_reg_8/D}] \
+[get_pins {EXECUTE_INST/p_reg_8/E}] \
+[get_pins {EXECUTE_INST/p_reg_7/D}] \
+[get_pins {EXECUTE_INST/p_reg_7/E}] \
+[get_pins {EXECUTE_INST/p_reg_6/D}] \
+[get_pins {EXECUTE_INST/p_reg_6/E}] \
+[get_pins {EXECUTE_INST/p_reg_5/D}] \
+[get_pins {EXECUTE_INST/p_reg_5/E}] \
+[get_pins {EXECUTE_INST/p_reg_4/D}] \
+[get_pins {EXECUTE_INST/p_reg_4/E}] \
+[get_pins {EXECUTE_INST/p_reg_3/D}] \
+[get_pins {EXECUTE_INST/p_reg_3/E}] \
+[get_pins {EXECUTE_INST/p_reg_2/D}] \
+[get_pins {EXECUTE_INST/p_reg_2/E}] \
+[get_pins {EXECUTE_INST/p_reg_1/D}] \
+[get_pins {EXECUTE_INST/p_reg_1/E}] \
+[get_pins {EXECUTE_INST/p_reg_0/D}] \
+[get_pins {EXECUTE_INST/p_reg_0/E}] ] 
+set_multicycle_path 2 -setup -start \
+  -to [list [get_pins {EXECUTE_INST/ov_flag_reg/D}] \
+[get_pins {EXECUTE_INST/ov_flag_reg/RN}] \
+[get_pins {EXECUTE_INST/ov_flag_reg/RN}] ] 
+set_multicycle_path 2 -setup -start \
+  -to [list [get_pins {EXECUTE_INST/acc_reg_32/D}] \
+[get_pins {EXECUTE_INST/acc_reg_32/E}] \
+[get_pins {EXECUTE_INST/acc_reg_31/D}] \
+[get_pins {EXECUTE_INST/acc_reg_31/E}] \
+[get_pins {EXECUTE_INST/acc_reg_30/D}] \
+[get_pins {EXECUTE_INST/acc_reg_30/E}] \
+[get_pins {EXECUTE_INST/acc_reg_29/D}] \
+[get_pins {EXECUTE_INST/acc_reg_29/E}] \
+[get_pins {EXECUTE_INST/acc_reg_28/D}] \
+[get_pins {EXECUTE_INST/acc_reg_28/E}] \
+[get_pins {EXECUTE_INST/acc_reg_27/D}] \
+[get_pins {EXECUTE_INST/acc_reg_27/E}] \
+[get_pins {EXECUTE_INST/acc_reg_26/D}] \
+[get_pins {EXECUTE_INST/acc_reg_26/E}] \
+[get_pins {EXECUTE_INST/acc_reg_25/D}] \
+[get_pins {EXECUTE_INST/acc_reg_25/E}] \
+[get_pins {EXECUTE_INST/acc_reg_24/D}] \
+[get_pins {EXECUTE_INST/acc_reg_24/E}] \
+[get_pins {EXECUTE_INST/acc_reg_23/D}] \
+[get_pins {EXECUTE_INST/acc_reg_23/E}] \
+[get_pins {EXECUTE_INST/acc_reg_22/D}] \
+[get_pins {EXECUTE_INST/acc_reg_22/E}] \
+[get_pins {EXECUTE_INST/acc_reg_21/D}] \
+[get_pins {EXECUTE_INST/acc_reg_21/E}] \
+[get_pins {EXECUTE_INST/acc_reg_20/D}] \
+[get_pins {EXECUTE_INST/acc_reg_20/E}] \
+[get_pins {EXECUTE_INST/acc_reg_19/D}] \
+[get_pins {EXECUTE_INST/acc_reg_19/E}] \
+[get_pins {EXECUTE_INST/acc_reg_18/D}] \
+[get_pins {EXECUTE_INST/acc_reg_18/E}] \
+[get_pins {EXECUTE_INST/acc_reg_17/D}] \
+[get_pins {EXECUTE_INST/acc_reg_17/E}] \
+[get_pins {EXECUTE_INST/acc_reg_16/D}] \
+[get_pins {EXECUTE_INST/acc_reg_16/E}] \
+[get_pins {EXECUTE_INST/acc_reg_15/D}] \
+[get_pins {EXECUTE_INST/acc_reg_15/E}] \
+[get_pins {EXECUTE_INST/acc_reg_14/D}] \
+[get_pins {EXECUTE_INST/acc_reg_14/E}] \
+[get_pins {EXECUTE_INST/acc_reg_13/D}] \
+[get_pins {EXECUTE_INST/acc_reg_13/E}] \
+[get_pins {EXECUTE_INST/acc_reg_12/D}] \
+[get_pins {EXECUTE_INST/acc_reg_12/E}] \
+[get_pins {EXECUTE_INST/acc_reg_11/D}] \
+[get_pins {EXECUTE_INST/acc_reg_11/E}] \
+[get_pins {EXECUTE_INST/acc_reg_10/D}] \
+[get_pins {EXECUTE_INST/acc_reg_10/E}] \
+[get_pins {EXECUTE_INST/acc_reg_9/D}] \
+[get_pins {EXECUTE_INST/acc_reg_9/E}] \
+[get_pins {EXECUTE_INST/acc_reg_8/D}] \
+[get_pins {EXECUTE_INST/acc_reg_8/E}] \
+[get_pins {EXECUTE_INST/acc_reg_7/D}] \
+[get_pins {EXECUTE_INST/acc_reg_7/E}] \
+[get_pins {EXECUTE_INST/acc_reg_6/D}] \
+[get_pins {EXECUTE_INST/acc_reg_6/E}] \
+[get_pins {EXECUTE_INST/acc_reg_5/D}] \
+[get_pins {EXECUTE_INST/acc_reg_5/E}] \
+[get_pins {EXECUTE_INST/acc_reg_4/D}] \
+[get_pins {EXECUTE_INST/acc_reg_4/E}] \
+[get_pins {EXECUTE_INST/acc_reg_3/D}] \
+[get_pins {EXECUTE_INST/acc_reg_3/E}] \
+[get_pins {EXECUTE_INST/acc_reg_2/D}] \
+[get_pins {EXECUTE_INST/acc_reg_2/E}] \
+[get_pins {EXECUTE_INST/acc_reg_1/D}] \
+[get_pins {EXECUTE_INST/acc_reg_1/E}] \
+[get_pins {EXECUTE_INST/acc_reg_0/D}] ] 

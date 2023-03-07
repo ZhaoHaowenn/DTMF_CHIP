@@ -1,0 +1,133 @@
+if {![namespace exists ::IMEX]} { namespace eval ::IMEX {} }
+set ::IMEX::dataVar [file dirname [file normalize [info script]]]
+set ::IMEX::libVar ${::IMEX::dataVar}/libs
+
+catch { setDesignMode -process 180 }
+catch { setAnalysisMode -analysisType bcwc }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -skew true }
+catch { setAnalysisMode -virtualIPO false }
+catch { setOptMode -drcMargin 0 }
+catch { setOptMode -effort high }
+catch { setOptMode -fixDrc true }
+catch { setOptMode -holdTargetSlack 0 }
+catch { setOptMode -maxDensity 0.95 }
+catch { setOptMode -reclaimArea true }
+catch { setOptMode -route noPreserve }
+catch { setOptMode -setupTargetSlack 0 }
+catch { setOptMode -simplifyNetlist false }
+catch { setOptMode -usefulSkew false }
+catch { setOptMode -yieldEffort none }
+setExtractRCMode  -lefTechFileMap ${::IMEX::libVar}/qx/lefdef.layermap -engine preRoute -total_c_th 5 -relative_c_th 0.03 -coupling_c_th 3
+catch { setCTSMode -addClockRootProp false }
+catch { setCTSMode -fixLeafInst true }
+catch { setCTSMode -fixNonLeafInst true }
+catch { setCTSMode -honorFence false }
+catch { setCTSMode -moveGate true }
+catch { setCTSMode -nameSingleDelim false }
+catch { setCTSMode -opt true }
+catch { setCTSMode -optAddBuffer false }
+catch { setCTSMode -rcViaCapFactor 0.8 }
+catch { setCTSMode -reportHTML false }
+catch { setCTSMode -routeBottomPreferredLayer Metal3 }
+catch { setCTSMode -routeClkNet false }
+catch { setCTSMode -routeGuide true }
+catch { setCTSMode -routeLeafBottomPreferredLayer Metal3 }
+catch { setCTSMode -routeLeafPreferredExtraSpace 1 }
+catch { setCTSMode -routeLeafTopPreferredLayer Metal4 }
+catch { setCTSMode -routePreferredExtraSpace 1 }
+catch { setCTSMode -routeTopPreferredLayer Metal4 }
+catch { setCTSMode -traceDPinAsLeaf false }
+catch { setCTSMode -traceIoPinAsLeaf false }
+catch { setCTSMode -useHVRC true }
+catch { setCTSMode -useLefACLimit false }
+catch { setCTSMode -useLibMaxCap false }
+catch { setCTSMode -useLibMaxFanout false }
+catch { setCTSMode -verbose false }
+catch {setNanoRouteMode -quiet -droutePostRouteWidenWireRule "NA"}
+catch {setNanoRouteMode -quiet -drouteStartIteration 0}
+catch {setNanoRouteMode -quiet -routeBottomRoutingLayer 1}
+catch {setNanoRouteMode -quiet -routeFillerInstPrefix "FILLER"}
+catch {setNanoRouteMode -quiet -routeTopRoutingLayer 6}
+catch {setNanoRouteMode -quiet -routeWithSiDriven false}
+catch {setNanoRouteMode -quiet -routeWithTimingDriven false}
+
+catch { setPlaceMode -checkRoute false }
+catch { setPlaceMode -clkGateAware false }
+catch { setPlaceMode -congEffort medium }
+catch { setPlaceMode -doCongOpt false }
+catch { setPlaceMode -ignoreScan true }
+catch { setPlaceMode -ignoreSpare true }
+catch { setPlaceMode -moduleAwareSpare false }
+catch { setPlaceMode -modulePlan true }
+catch { setPlaceMode -placeIoPins true }
+catch { setPlaceMode -powerDriven false }
+catch { setPlaceMode -preserveRouting false }
+catch { setPlaceMode -reorderScan true }
+catch { setPlaceMode -rmAffectedRouting false }
+catch { setPlaceMode -swapEEQ false }
+catch { setPlaceMode -timingDriven true }
+catch { setScanReorderMode -allowSwapping false }
+catch { setScanReorderMode -clkAware false }
+catch { setScanReorderMode -defInForce true }
+catch { setScanReorderMode -keepPDPorts true }
+catch { setScanReorderMode -skipMode skipNone }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
+catch { setOasisOutMode -cblockCompression true }
+catch { setOasisOutMode -SEvianames false }
+catch { setOasisOutMode -snapToMGrid false }
+catch { setOasisOutMode -specifyViaName default }
+catch { setOasisOutMode -textSize 1 }
+catch { setOasisOutMode -uniquifyCellNamesPrefix false }
+catch { setOasisOutMode -virtualConnection true }
+catch { setDelayCalMode -engine aae }
+catch { setTrialRouteMode -autoSkipTracks false }
+catch { setTrialRouteMode -blockageCostMultiple 1 }
+catch { setTrialRouteMode -detour true }
+catch { setTrialRouteMode -floorPlanMode false }
+catch { setTrialRouteMode -handlePartition false }
+catch { setTrialRouteMode -handlePartitionComplex false }
+catch { setTrialRouteMode -handlePreroute true }
+catch { setTrialRouteMode -highEffort false }
+catch { setTrialRouteMode -honorPin false }
+catch { setTrialRouteMode -ignoreAbutted2TermNet false }
+catch { setTrialRouteMode -ignoreDEFTrack false }
+catch { setTrialRouteMode -ignoreObstruct false }
+catch { setTrialRouteMode -keepExistingRoutes false }
+catch { setTrialRouteMode -keepMarkedOptRoutes true }
+catch { setTrialRouteMode -maxDetourRatio 0 }
+catch { setTrialRouteMode -maxRouteLayer 6 }
+catch { setTrialRouteMode -minRouteLayer 1 }
+catch { setTrialRouteMode -pinGuide true }
+catch { setTrialRouteMode -PKS false }
+catch { setTrialRouteMode -printWiresOnRTBlk false }
+catch { setTrialRouteMode -routeGuide {} }
+catch { setTrialRouteMode -routeObs true }
+catch { setTrialRouteMode -selMarkedNet false }
+catch { setTrialRouteMode -selMarkedNetOnly false }
+catch { setTrialRouteMode -selNet {} }
+catch { setTrialRouteMode -selNetOnly {} }
+catch { setTrialRouteMode -updateRemainTrks true }
+catch { setTrialRouteMode -useM1 false }
+catch { setTrialRouteMode -usePagedArray false }
+catch { setImportMode -config true }
+catch { setImportMode -keepEmptyModule false }
+catch { setImportMode -minDBUPerMicron 0 }
+catch { setImportMode -treatUndefinedCellAsBbox false }
+catch { setImportMode -useLefDef56 true }
+catch { setImportMode -verticalRow false }
+catch { setTieHiLoMode -createHierPort false }
+catch { setTieHiLoMode -honorDontTouch false }
+catch { setFillerMode -corePrefix FILLER }
+catch { setFillerMode -createRows true }
+catch { setFillerMode -doDRC true }
+catch { setFillerMode -ecoMode false }
+catch { setStreamOutMode -SEvianames false }
+catch { setStreamOutMode -snapToMGrid false }
+catch { setStreamOutMode -specifyViaName default }
+catch { setStreamOutMode -textSize 1 }
+catch { setStreamOutMode -uniquifyCellNamesPrefix false }
+catch { setStreamOutMode -version 3 }
+catch { setStreamOutMode -virtualConnection true }

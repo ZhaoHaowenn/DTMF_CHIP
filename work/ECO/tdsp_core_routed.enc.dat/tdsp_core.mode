@@ -1,0 +1,14 @@
+setCteReport
+setAnalysisMode  -allClockDomain -setup -skew -noUsefulSkew -log -warn -caseAnalysis -noSequentialConstProp -moduleIOCstr -clockTree -clkSrcPath -timingSelfLoopsSkew -async -useOutputPinCap -latch -latchDelayCalIteration 2 -timeBorrowing -latchFastDelayCal -clockGatingCheck -disableMultipleDriveNet -bcWc -nocrpr -markClkNetsBeforeConstProp -noUseDetailRC -noHonorCDTV
+setOptMode -mediumEffort -addPortAsNeeded -setupTargetSlack 0.000  -holdTargetSlack 0.000  -drcMargin 0.00  -maxDensity 0.95  -fixDrc -noFixFanoutLoad -addInst -deleteInst -downsizeInst -optimizeFF -optimizeConstantNet -noSimplifyNetlist -optimizeNetsAcrossDiffVoltPDs -rebuffer -noBufferAssignNets
+setExtractRCMode -default
+setDelayCalMode  -default 
+setCTSMode  -noHonorCDTV -handlePreroute -noAddClockRootProp -noUseLibMaxFanout -noUseLibMaxCap -noSetDPinAsSync -noSetIoPinAsSync -noFence -noUseSingleDelim -noUseCTSRouteGuide -fixedNonLeafInst -fixedLeafInst -leafRouteTypeOnGate -noUseGuideOnM2 -overlapCheck -HTMLReport -noRouteClkNet -postOpt -noOptAddBuffer -moveGate -noSnapGatingCell -noUsePowerInCTS -noVerbose -noRouteWithFiller -highEffort
+setNanoRouteMode -quiet routeSiEffort "low"
+setNanoRouteMode -quiet routeWithEco true
+setNanoRouteMode -quiet routeWithSiDriven false
+setNanoRouteMode -quiet routeWithTimingDriven false
+
+setScanReorderMode  -mediumEffort
+setUsefulSkewMode  -noMaxSkew -useCells { DLY4X1 DLY3X1 DLY2X1 DLY1X1 CLKBUFXL CLKBUFX8 CLKBUFX4 CLKBUFX3 CLKBUFX2 CLKBUFX20 CLKBUFX1 CLKBUFX16 CLKBUFX12 BUFXL BUFX8 BUFX4 BUFX3 BUFX2 BUFX20 BUFX1 BUFX16 BUFX12 INVXL INVX8 INVX4 INVX3 INVX2 INVX20 INVX1 INVX16 INVX12 CLKINVXL CLKINVX8 CLKINVX4 CLKINVX3 CLKINVX2 CLKINVX20 CLKINVX1 CLKINVX16 CLKINVX12 } -boundary -noEcoRoute -noMaxAllowedDelay -noAllNegEndPoints
+setRCFactor -detclockcap 1.000000

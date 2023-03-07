@@ -1,0 +1,8 @@
+################################################
+#                                              #
+# Silicon Perspective, A Cadence Company       #
+# FirstEncounter Design Restore script         #
+#    for design session: /usr1/arthurs/NRU_3_1/RUN/VERIFY/tdsp_core.enc                     
+#                                              #
+################################################
+restoreDesign /usr1/arthurs/NRU_3_1/RUN/VERIFY/tdsp_core.enc.dat tdsp_core 1 1 0

@@ -1,0 +1,30 @@
+1. Protrusion rule
+
+zoomBox 329.796 544.202 338.084 550.923
+
+
+2. Minimum Step rule
+
+zoomBox 330.780 626.817 331.193 627.176
+
+
+fillNotch
+
+
+3. Via rule 
+
+zoomBox 330.485 532.674 343.262 543.682
+
+
+4. Soft spacing rule
+
+zoomBox 247.437 534.621 257.339 539.241
+
+
+verifyGeometry -area { 247.67 532.0415 257.1995 541.897 } -useNonDefaultSpacing
+
+
+5. Antenna checking
+
+
+zoomBox 329.520 555.053 355.146 571.327

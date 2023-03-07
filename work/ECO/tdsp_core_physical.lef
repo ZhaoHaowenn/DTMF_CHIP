@@ -1,0 +1,1811 @@
+MACRO tdsp_core
+  CLASS  BLOCK ;
+  FOREIGN tdsp_core 0.000 0.000 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 442.860 BY 630.000 ;
+  SYMMETRY X Y R90  ;
+  PIN port_as
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 254.380 442.860 254.660 ;
+    END
+  END port_as
+  PIN address[6]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 305.340 442.860 305.620 ;
+    END
+  END address[6]
+  PIN t_data_in[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 289.100 442.860 289.380 ;
+    END
+  END t_data_in[15]
+  PIN t_data_in[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 324.380 442.860 324.660 ;
+    END
+  END t_data_in[8]
+  PIN scan_en
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 420.140 442.860 420.420 ;
+    END
+  END scan_en
+  PIN SPCASCAN_N3_port_data_out_0_
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 12.460 0.280 12.740 ;
+    END
+  END SPCASCAN_N3_port_data_out_0_
+  PIN port_pad_data_in[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 389.900 442.860 390.180 ;
+    END
+  END port_pad_data_in[9]
+  PIN p_address[2]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 168.140 442.860 168.420 ;
+    END
+  END p_address[2]
+  PIN rom_data_in[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 93.100 442.860 93.380 ;
+    END
+  END rom_data_in[13]
+  PIN t_data_in[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 315.420 442.860 315.700 ;
+    END
+  END t_data_in[1]
+  PIN t_data_out[14]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 380.940 442.860 381.220 ;
+    END
+  END t_data_out[14]
+  PIN t_data_out[3]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 163.100 442.860 163.380 ;
+    END
+  END t_data_out[3]
+  PIN port_pad_data_in[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 42.700 442.860 42.980 ;
+    END
+  END port_pad_data_in[2]
+  PIN rom_data_in[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 103.180 442.860 103.460 ;
+    END
+  END rom_data_in[4]
+  PIN port_pad_data_out[6]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 12.460 442.860 12.740 ;
+    END
+  END port_pad_data_out[6]
+  PIN port_pad_data_in[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 621.740 0.280 622.020 ;
+    END
+  END port_pad_data_in[14]
+  PIN t_data_in[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 330.540 442.860 330.820 ;
+    END
+  END t_data_in[10]
+  PIN SPCASCAN_N22_data_out_0_
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.340 309.820 442.860 310.100 ;
+    END
+  END SPCASCAN_N22_data_out_0_
+  PIN port_pad_data_out[14]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 622.860 0.280 623.140 ;
+    END
+  END port_pad_data_out[14]
+  PIN address[4]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 290.220 442.860 290.500 ;
+    END
+  END address[4]
+  PIN t_data_in[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 294.140 442.860 294.420 ;
+    END
+  END t_data_in[6]
+  PIN t_data_out[8]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 52.780 442.860 53.060 ;
+    END
+  END t_data_out[8]
+  PIN port_address[2]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 349.580 442.860 349.860 ;
+    END
+  END port_address[2]
+  PIN port_pad_data_in[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 28.140 442.860 28.420 ;
+    END
+  END port_pad_data_in[7]
+  PIN rom_data_in[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 88.620 442.860 88.900 ;
+    END
+  END rom_data_in[11]
+  PIN p_address[4]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 158.060 442.860 158.340 ;
+    END
+  END p_address[4]
+  PIN port_pad_data_out[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 16.940 0.280 17.220 ;
+    END
+  END port_pad_data_out[1]
+  PIN rom_data_in[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 98.700 442.860 98.980 ;
+    END
+  END rom_data_in[9]
+  PIN t_data_out[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 355.740 442.860 356.020 ;
+    END
+  END t_data_out[1]
+  PIN port_pad_data_in[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 27.020 0.280 27.300 ;
+    END
+  END port_pad_data_in[0]
+  PIN SPCASCAN_N24_t_sel_7
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 344.540 442.860 344.820 ;
+    END
+  END SPCASCAN_N24_t_sel_7
+  PIN rom_data_in[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 133.420 442.860 133.700 ;
+    END
+  END rom_data_in[2]
+  PIN port_pad_data_out[8]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.340 411.180 442.860 411.460 ;
+    END
+  END port_pad_data_out[8]
+  PIN port_pad_data_in[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 405.580 442.860 405.860 ;
+    END
+  END port_pad_data_in[12]
+  PIN t_data_in[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 329.420 442.860 329.700 ;
+    END
+  END t_data_in[12]
+  PIN port_pad_data_out[12]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 430.220 442.860 430.500 ;
+    END
+  END port_pad_data_out[12]
+  PIN address[2]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 284.060 442.860 284.340 ;
+    END
+  END address[2]
+  PIN t_data_in[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 295.260 442.860 295.540 ;
+    END
+  END t_data_in[4]
+  PIN port_address[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 339.500 442.860 339.780 ;
+    END
+  END port_address[0]
+  PIN t_data_out[6]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 364.700 442.860 364.980 ;
+    END
+  END t_data_out[6]
+  PIN t_data_out[11]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 47.180 442.860 47.460 ;
+    END
+  END t_data_out[11]
+  PIN p_address[6]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 149.100 442.860 149.380 ;
+    END
+  END p_address[6]
+  PIN port_pad_data_in[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 33.180 442.860 33.460 ;
+    END
+  END port_pad_data_in[5]
+  PIN rom_data_in[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 113.260 442.860 113.540 ;
+    END
+  END rom_data_in[7]
+  PIN port_pad_data_out[3]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 22.540 442.860 22.820 ;
+    END
+  END port_pad_data_out[3]
+  PIN n_7862
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 279.580 0.280 279.860 ;
+    END
+  END n_7862
+  PIN address[7]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 263.900 442.860 264.180 ;
+    END
+  END address[7]
+  PIN write
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 265.020 442.860 265.300 ;
+    END
+  END write
+  PIN rom_data_in[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.340 139.020 442.860 139.300 ;
+    END
+  END rom_data_in[0]
+  PIN port_pad_data_in[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 391.020 442.860 391.300 ;
+    END
+  END port_pad_data_in[10]
+  PIN int
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 415.100 0.280 415.380 ;
+    END
+  END int
+  PIN t_data_in[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.340 340.620 442.860 340.900 ;
+    END
+  END t_data_in[14]
+  PIN t_data_in[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 325.500 442.860 325.780 ;
+    END
+  END t_data_in[9]
+  PIN rom_data_in[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 107.660 442.860 107.940 ;
+    END
+  END rom_data_in[14]
+  PIN SPCASCAN_N26_spi_sr_0_
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 400.540 442.860 400.820 ;
+    END
+  END SPCASCAN_N26_spi_sr_0_
+  PIN p_address[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 169.260 442.860 169.540 ;
+    END
+  END p_address[1]
+  PIN address[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 279.020 442.860 279.300 ;
+    END
+  END address[0]
+  PIN SPCASCAN_N2_low_mag_8_
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 6.860 442.860 7.140 ;
+    END
+  END SPCASCAN_N2_low_mag_8_
+  PIN port_pad_data_out[10]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 421.260 442.860 421.540 ;
+    END
+  END port_pad_data_out[10]
+  PIN t_data_in[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 304.220 442.860 304.500 ;
+    END
+  END t_data_in[2]
+  PIN BG_scan_out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 314.860 0.280 315.140 ;
+    END
+  END BG_scan_out
+  PIN t_data_out[4]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.340 123.900 442.860 124.180 ;
+    END
+  END t_data_out[4]
+  PIN t_data_out[13]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 370.860 442.860 371.140 ;
+    END
+  END t_data_out[13]
+  PIN port_pad_data_in[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 38.220 442.860 38.500 ;
+    END
+  END port_pad_data_in[3]
+  PIN p_address[8]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 143.500 442.860 143.780 ;
+    END
+  END p_address[8]
+  PIN SPCASCAN_N4_low_mag_3_
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 7.980 0.280 8.260 ;
+    END
+  END SPCASCAN_N4_low_mag_3_
+  PIN rom_data_in[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 122.780 442.860 123.060 ;
+    END
+  END rom_data_in[5]
+  PIN port_pad_data_in[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 616.700 0.280 616.980 ;
+    END
+  END port_pad_data_in[15]
+  PIN port_pad_data_out[5]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 16.940 442.860 17.220 ;
+    END
+  END port_pad_data_out[5]
+  PIN bus_request
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 258.860 442.860 259.140 ;
+    END
+  END bus_request
+  PIN bus_grant
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 259.980 442.860 260.260 ;
+    END
+  END bus_grant
+  PIN address[5]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 300.300 442.860 300.580 ;
+    END
+  END address[5]
+  PIN port_pad_data_out[15]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 626.220 0.520 626.500 ;
+    END
+  END port_pad_data_out[15]
+  PIN SPCASCAN_N1_p_data_out_13_
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 87.500 442.860 87.780 ;
+    END
+  END SPCASCAN_N1_p_data_out_13_
+  PIN t_data_in[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 320.460 442.860 320.740 ;
+    END
+  END t_data_in[7]
+  PIN t_data_out[9]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 369.740 442.860 370.020 ;
+    END
+  END t_data_out[9]
+  PIN rom_data_in[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 97.580 442.860 97.860 ;
+    END
+  END rom_data_in[12]
+  PIN port_pad_data_in[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 394.940 442.860 395.220 ;
+    END
+  END port_pad_data_in[8]
+  PIN p_address[3]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 159.180 442.860 159.460 ;
+    END
+  END p_address[3]
+  PIN t_data_in[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 314.300 442.860 314.580 ;
+    END
+  END t_data_in[0]
+  PIN port_pad_data_out[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 18.060 0.280 18.340 ;
+    END
+  END port_pad_data_out[0]
+  PIN BG_scan_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 374.780 442.860 375.060 ;
+    END
+  END BG_scan_in
+  PIN t_data_out[2]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 57.260 442.860 57.540 ;
+    END
+  END t_data_out[2]
+  PIN t_data_out[15]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.340 384.860 442.860 385.140 ;
+    END
+  END t_data_out[15]
+  PIN port_pad_data_in[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 22.540 0.280 22.820 ;
+    END
+  END port_pad_data_in[1]
+  PIN rom_data_in[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 128.940 442.860 129.220 ;
+    END
+  END rom_data_in[3]
+  PIN port_pad_data_in[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 410.060 442.860 410.340 ;
+    END
+  END port_pad_data_in[13]
+  PIN port_pad_data_out[7]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.340 7.980 442.860 8.260 ;
+    END
+  END port_pad_data_out[7]
+  PIN SPCASCAN_N5_port_data_out_1_
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 6.860 0.280 7.140 ;
+    END
+  END SPCASCAN_N5_port_data_out_1_
+  PIN t_data_in[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 334.460 442.860 334.740 ;
+    END
+  END t_data_in[11]
+  PIN bio
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 273.980 442.860 274.260 ;
+    END
+  END bio
+  PIN address[3]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.340 285.180 442.860 285.460 ;
+    END
+  END address[3]
+  PIN port_pad_data_out[13]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 431.340 442.860 431.620 ;
+    END
+  END port_pad_data_out[13]
+  PIN read
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 268.940 442.860 269.220 ;
+    END
+  END read
+  PIN t_data_in[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 319.340 442.860 319.620 ;
+    END
+  END t_data_in[5]
+  PIN t_data_out[10]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 48.300 442.860 48.580 ;
+    END
+  END t_data_out[10]
+  PIN port_address[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 345.660 442.860 345.940 ;
+    END
+  END port_address[1]
+  PIN t_data_out[7]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 354.620 442.860 354.900 ;
+    END
+  END t_data_out[7]
+  PIN p_read
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 178.220 442.860 178.500 ;
+    END
+  END p_read
+  PIN rom_data_in[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 118.300 442.860 118.580 ;
+    END
+  END rom_data_in[10]
+  PIN p_address[5]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 153.580 442.860 153.860 ;
+    END
+  END p_address[5]
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 379.820 442.860 380.100 ;
+    END
+  END clk
+  PIN port_pad_data_in[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 32.060 442.860 32.340 ;
+    END
+  END port_pad_data_in[6]
+  PIN rom_data_in[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 108.780 442.860 109.060 ;
+    END
+  END rom_data_in[8]
+  PIN port_pad_data_out[2]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 27.020 442.860 27.300 ;
+    END
+  END port_pad_data_out[2]
+  PIN t_data_out[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 350.700 442.860 350.980 ;
+    END
+  END t_data_out[0]
+  PIN reset
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 385.980 442.860 386.260 ;
+    END
+  END reset
+  PIN port_pad_data_out[9]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 416.220 442.860 416.500 ;
+    END
+  END port_pad_data_out[9]
+  PIN rom_data_in[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 137.900 442.860 138.180 ;
+    END
+  END rom_data_in[1]
+  PIN port_pad_data_in[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.340 396.060 442.860 396.340 ;
+    END
+  END port_pad_data_in[11]
+  PIN t_data_in[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 335.580 442.860 335.860 ;
+    END
+  END t_data_in[13]
+  PIN SPCASCAN_N25_data_out_12_
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 360.220 442.860 360.500 ;
+    END
+  END SPCASCAN_N25_data_out_12_
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal4 ;
+        RECT 19.960 0.000 24.960 5.040 ;
+        RECT 241.025 0.000 246.025 5.040 ;
+      LAYER Metal1 ;
+        RECT 0.000 619.520 0.660 620.320 ;
+        RECT 0.000 4.640 0.660 5.440 ;
+        RECT 0.000 14.720 0.660 15.520 ;
+        RECT 0.000 24.800 0.660 25.600 ;
+        RECT 0.000 34.880 0.660 35.680 ;
+        RECT 0.000 44.960 0.660 45.760 ;
+        RECT 0.000 55.040 0.660 55.840 ;
+        RECT 0.000 65.120 0.660 65.920 ;
+        RECT 0.000 75.200 0.660 76.000 ;
+        RECT 0.000 85.280 0.660 86.080 ;
+        RECT 0.000 95.360 0.660 96.160 ;
+        RECT 0.000 105.440 0.660 106.240 ;
+        RECT 0.000 115.520 0.660 116.320 ;
+        RECT 0.000 125.600 0.660 126.400 ;
+        RECT 0.000 135.680 0.660 136.480 ;
+        RECT 0.000 145.760 0.660 146.560 ;
+        RECT 0.000 155.840 0.660 156.640 ;
+        RECT 0.000 165.920 0.660 166.720 ;
+        RECT 0.000 176.000 0.660 176.800 ;
+        RECT 0.000 186.080 0.660 186.880 ;
+        RECT 0.000 196.160 0.660 196.960 ;
+        RECT 0.000 206.240 0.660 207.040 ;
+        RECT 0.000 216.320 0.660 217.120 ;
+        RECT 0.000 226.400 0.660 227.200 ;
+        RECT 0.000 236.480 0.660 237.280 ;
+        RECT 0.000 246.560 0.660 247.360 ;
+        RECT 0.000 256.640 0.660 257.440 ;
+        RECT 0.000 266.720 0.660 267.520 ;
+        RECT 0.000 276.800 0.660 277.600 ;
+        RECT 0.000 286.880 0.660 287.680 ;
+        RECT 0.000 296.960 0.660 297.760 ;
+        RECT 0.000 307.040 0.660 307.840 ;
+        RECT 0.000 317.120 0.660 317.920 ;
+        RECT 0.000 327.200 0.660 328.000 ;
+        RECT 0.000 337.280 0.660 338.080 ;
+        RECT 0.000 347.360 0.660 348.160 ;
+        RECT 0.000 357.440 0.660 358.240 ;
+        RECT 0.000 367.520 0.660 368.320 ;
+        RECT 0.000 377.600 0.660 378.400 ;
+        RECT 0.000 387.680 0.660 388.480 ;
+        RECT 0.000 397.760 0.660 398.560 ;
+        RECT 0.000 407.840 0.660 408.640 ;
+        RECT 0.000 417.920 0.660 418.720 ;
+        RECT 0.000 428.000 0.660 428.800 ;
+        RECT 0.000 438.080 0.660 438.880 ;
+        RECT 0.000 448.160 0.660 448.960 ;
+        RECT 0.000 458.240 0.660 459.040 ;
+        RECT 0.000 468.320 0.660 469.120 ;
+        RECT 0.000 478.400 0.660 479.200 ;
+        RECT 0.000 488.480 0.660 489.280 ;
+        RECT 0.000 498.560 0.660 499.360 ;
+        RECT 0.000 508.640 0.660 509.440 ;
+        RECT 0.000 518.720 0.660 519.520 ;
+        RECT 0.000 528.800 0.660 529.600 ;
+        RECT 0.000 538.880 0.660 539.680 ;
+        RECT 0.000 548.960 0.660 549.760 ;
+        RECT 0.000 559.040 0.660 559.840 ;
+        RECT 0.000 569.120 0.660 569.920 ;
+        RECT 0.000 579.200 0.660 580.000 ;
+        RECT 0.000 589.280 0.660 590.080 ;
+        RECT 0.000 609.440 0.660 610.240 ;
+    END
+  END VSS
+  PIN as
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 270.060 442.860 270.340 ;
+    END
+  END as
+  PIN address[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 280.140 442.860 280.420 ;
+    END
+  END address[1]
+  PIN port_pad_data_out[11]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 425.740 442.860 426.020 ;
+    END
+  END port_pad_data_out[11]
+  PIN rom_data_in[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 83.020 442.860 83.300 ;
+    END
+  END rom_data_in[15]
+  PIN p_address[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 173.740 442.860 174.020 ;
+    END
+  END p_address[0]
+  PIN FE_PT1_
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 275.100 442.860 275.380 ;
+    END
+  END FE_PT1_
+  PIN SPCASCAN_N27_port_data_out_11_
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 415.100 442.860 415.380 ;
+    END
+  END SPCASCAN_N27_port_data_out_11_
+  PIN t_data_in[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 299.180 442.860 299.460 ;
+    END
+  END t_data_in[3]
+  PIN t_data_out[5]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 365.820 442.860 366.100 ;
+    END
+  END t_data_out[5]
+  PIN t_data_out[12]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 375.900 442.860 376.180 ;
+    END
+  END t_data_out[12]
+  PIN p_address[7]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 147.980 442.860 148.260 ;
+    END
+  END p_address[7]
+  PIN port_pad_data_in[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 37.100 442.860 37.380 ;
+    END
+  END port_pad_data_in[4]
+  PIN rom_data_in[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 127.820 442.860 128.100 ;
+    END
+  END rom_data_in[6]
+  PIN port_pad_data_out[4]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 442.580 18.060 442.860 18.340 ;
+    END
+  END port_pad_data_out[4]
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal4 ;
+        RECT 26.960 0.000 31.960 5.040 ;
+        RECT 248.025 0.000 253.025 5.040 ;
+      LAYER Metal1 ;
+        RECT 0.000 624.560 0.660 625.360 ;
+        RECT 0.000 9.680 0.660 10.480 ;
+        RECT 0.000 19.760 0.660 20.560 ;
+        RECT 0.000 29.840 0.660 30.640 ;
+        RECT 0.000 39.920 0.660 40.720 ;
+        RECT 0.000 50.000 0.660 50.800 ;
+        RECT 0.000 60.080 0.660 60.880 ;
+        RECT 0.000 70.160 0.660 70.960 ;
+        RECT 0.000 80.240 0.660 81.040 ;
+        RECT 0.000 90.320 0.660 91.120 ;
+        RECT 0.000 100.400 0.660 101.200 ;
+        RECT 0.000 110.480 0.660 111.280 ;
+        RECT 0.000 120.560 0.660 121.360 ;
+        RECT 0.000 130.640 0.660 131.440 ;
+        RECT 0.000 140.720 0.660 141.520 ;
+        RECT 0.000 150.800 0.660 151.600 ;
+        RECT 0.000 160.880 0.660 161.680 ;
+        RECT 0.000 170.960 0.660 171.760 ;
+        RECT 0.000 181.040 0.660 181.840 ;
+        RECT 0.000 191.120 0.660 191.920 ;
+        RECT 0.000 201.200 0.660 202.000 ;
+        RECT 0.000 211.280 0.660 212.080 ;
+        RECT 0.000 221.360 0.660 222.160 ;
+        RECT 0.000 231.440 0.660 232.240 ;
+        RECT 0.000 241.520 0.660 242.320 ;
+        RECT 0.000 251.600 0.660 252.400 ;
+        RECT 0.000 261.680 0.660 262.480 ;
+        RECT 0.000 271.760 0.660 272.560 ;
+        RECT 0.000 281.840 0.660 282.640 ;
+        RECT 0.000 291.920 0.660 292.720 ;
+        RECT 0.000 302.000 0.660 302.800 ;
+        RECT 0.000 312.080 0.660 312.880 ;
+        RECT 0.000 322.160 0.660 322.960 ;
+        RECT 0.000 332.240 0.660 333.040 ;
+        RECT 0.000 342.320 0.660 343.120 ;
+        RECT 0.000 352.400 0.660 353.200 ;
+        RECT 0.000 362.480 0.660 363.280 ;
+        RECT 0.000 372.560 0.660 373.360 ;
+        RECT 0.000 382.640 0.660 383.440 ;
+        RECT 0.000 392.720 0.660 393.520 ;
+        RECT 0.000 402.800 0.660 403.600 ;
+        RECT 0.000 412.880 0.660 413.680 ;
+        RECT 0.000 422.960 0.660 423.760 ;
+        RECT 0.000 433.040 0.660 433.840 ;
+        RECT 0.000 443.120 0.660 443.920 ;
+        RECT 0.000 453.200 0.660 454.000 ;
+        RECT 0.000 473.360 0.660 474.160 ;
+        RECT 0.000 483.440 0.660 484.240 ;
+        RECT 0.000 493.520 0.660 494.320 ;
+        RECT 0.000 503.600 0.660 504.400 ;
+        RECT 0.000 513.680 0.660 514.480 ;
+        RECT 0.000 523.760 0.660 524.560 ;
+        RECT 0.000 533.840 0.660 534.640 ;
+        RECT 0.000 543.920 0.660 544.720 ;
+        RECT 0.000 554.000 0.660 554.800 ;
+        RECT 0.000 564.080 0.660 564.880 ;
+        RECT 0.000 574.160 0.660 574.960 ;
+        RECT 0.000 584.240 0.660 585.040 ;
+        RECT 0.000 594.320 0.660 595.120 ;
+        RECT 0.000 604.400 0.660 605.200 ;
+        RECT 0.000 614.480 0.660 615.280 ;
+    END
+  END VDD
+  OBS 
+      LAYER Metal4 ;
+        RECT 0.140 0.140 19.490 6.390 ;
+        RECT 25.430 0.140 26.490 629.860 ;
+        RECT 32.430 0.140 240.555 629.860 ;
+        RECT 246.495 0.140 247.555 629.860 ;
+        RECT 253.495 0.140 442.720 6.390 ;
+        RECT 0.140 5.510 442.720 6.390 ;
+        RECT 253.495 0.140 442.110 7.510 ;
+        RECT 0.750 5.510 442.110 7.510 ;
+        RECT 253.495 0.140 441.870 629.860 ;
+        RECT 0.750 5.510 441.870 625.750 ;
+        RECT 0.140 8.730 442.720 11.990 ;
+        RECT 0.140 13.210 442.720 16.470 ;
+        RECT 0.140 18.810 442.720 22.070 ;
+        RECT 0.140 23.290 442.720 26.550 ;
+        RECT 0.140 28.890 442.720 31.590 ;
+        RECT 0.140 33.930 442.720 36.630 ;
+        RECT 0.140 38.970 442.720 42.230 ;
+        RECT 0.140 43.450 442.720 46.710 ;
+        RECT 0.140 49.050 442.720 52.310 ;
+        RECT 0.140 53.530 442.720 56.790 ;
+        RECT 0.140 58.010 442.720 82.550 ;
+        RECT 0.140 83.770 442.720 87.030 ;
+        RECT 0.140 89.370 442.720 92.630 ;
+        RECT 0.140 93.850 442.720 97.110 ;
+        RECT 0.140 99.450 442.720 102.710 ;
+        RECT 0.140 103.930 442.720 107.190 ;
+        RECT 0.140 109.530 442.720 112.790 ;
+        RECT 0.140 114.010 442.720 117.830 ;
+        RECT 0.140 119.050 442.720 122.310 ;
+        RECT 0.750 8.730 442.110 123.430 ;
+        RECT 0.140 27.770 442.110 123.430 ;
+        RECT 0.140 124.650 442.720 127.540 ;
+        RECT 0.140 129.690 442.720 132.950 ;
+        RECT 0.140 124.650 442.670 137.430 ;
+        RECT 0.140 134.170 442.720 137.430 ;
+        RECT 0.140 124.650 442.110 138.550 ;
+        RECT 442.390 124.650 442.670 139.300 ;
+        RECT 442.340 139.020 442.720 139.300 ;
+        RECT 0.140 139.770 442.720 143.030 ;
+        RECT 0.140 144.250 442.720 147.510 ;
+        RECT 0.140 149.850 442.720 153.110 ;
+        RECT 0.140 154.330 442.720 157.590 ;
+        RECT 0.140 159.930 442.720 162.630 ;
+        RECT 0.140 163.850 442.720 167.670 ;
+        RECT 0.140 170.010 442.720 173.270 ;
+        RECT 0.140 174.490 442.720 177.750 ;
+        RECT 0.140 178.970 442.720 253.910 ;
+        RECT 0.140 255.130 442.720 258.390 ;
+        RECT 0.140 260.730 442.720 263.430 ;
+        RECT 0.140 265.770 442.720 268.470 ;
+        RECT 0.140 270.810 442.720 273.510 ;
+        RECT 0.140 275.850 442.720 278.550 ;
+        RECT 0.140 27.770 441.870 279.110 ;
+        RECT 0.140 139.770 442.110 279.110 ;
+        RECT 0.140 280.890 442.720 283.590 ;
+        RECT 0.750 139.770 442.110 284.710 ;
+        RECT 0.140 280.330 442.110 284.710 ;
+        RECT 0.140 285.930 442.720 288.630 ;
+        RECT 0.140 290.970 442.720 293.670 ;
+        RECT 0.140 296.010 442.720 298.710 ;
+        RECT 0.140 301.050 442.720 303.750 ;
+        RECT 0.140 285.930 442.110 309.350 ;
+        RECT 0.140 306.090 442.720 309.350 ;
+        RECT 442.340 309.820 442.720 310.100 ;
+        RECT 0.140 310.570 442.720 313.830 ;
+        RECT 0.140 280.330 441.870 314.390 ;
+        RECT 0.140 310.570 442.670 314.390 ;
+        RECT 0.750 310.570 442.670 384.390 ;
+        RECT 0.140 316.170 442.720 318.870 ;
+        RECT 0.140 321.210 442.720 323.910 ;
+        RECT 0.140 326.250 442.720 328.950 ;
+        RECT 0.140 331.290 442.720 333.990 ;
+        RECT 0.140 336.330 442.720 339.030 ;
+        RECT 0.140 341.370 442.720 344.070 ;
+        RECT 0.140 346.410 442.720 349.110 ;
+        RECT 0.140 351.450 442.720 354.150 ;
+        RECT 0.140 356.490 442.720 359.750 ;
+        RECT 0.140 360.970 442.720 364.230 ;
+        RECT 0.140 366.570 442.720 369.270 ;
+        RECT 0.140 371.610 442.720 374.310 ;
+        RECT 0.140 376.650 442.720 379.350 ;
+        RECT 442.390 309.820 442.670 384.390 ;
+        RECT 0.140 315.610 442.670 384.390 ;
+        RECT 0.140 381.690 442.720 384.390 ;
+        RECT 442.340 384.860 442.720 385.140 ;
+        RECT 442.390 384.860 442.670 389.430 ;
+        RECT 0.140 386.730 442.720 389.430 ;
+        RECT 0.140 391.770 442.720 394.470 ;
+        RECT 0.140 385.610 442.110 395.590 ;
+        RECT 0.140 396.810 442.720 400.070 ;
+        RECT 0.140 401.290 442.720 405.110 ;
+        RECT 0.140 406.330 442.720 409.590 ;
+        RECT 0.140 396.810 442.110 410.710 ;
+        RECT 0.990 285.930 442.010 629.860 ;
+        RECT 0.140 315.610 442.010 414.630 ;
+        RECT 0.140 411.930 442.720 414.630 ;
+        RECT 0.990 411.930 442.110 629.860 ;
+        RECT 0.750 411.930 442.110 625.750 ;
+        RECT 0.140 416.970 442.720 419.670 ;
+        RECT 0.140 422.010 442.720 425.270 ;
+        RECT 0.140 426.490 442.720 429.750 ;
+        RECT 0.140 415.850 442.110 616.230 ;
+        RECT 0.140 432.090 442.720 616.230 ;
+        RECT 0.140 617.450 442.720 621.270 ;
+        RECT 0.750 0.140 19.490 625.750 ;
+        RECT 0.140 623.610 442.720 625.750 ;
+        RECT 0.990 432.090 442.720 629.860 ;
+        RECT 0.140 626.970 442.720 629.860 ;
+        RECT 19.960 5.510 24.960 630.000 ;
+        RECT 26.960 5.510 31.960 630.000 ;
+        RECT 241.025 5.510 246.025 630.000 ;
+        RECT 248.025 5.510 253.025 630.000 ;
+      LAYER Metal3 ;
+        RECT 0.140 0.140 442.720 6.390 ;
+        RECT 0.750 0.140 442.110 7.700 ;
+        RECT 0.750 7.420 442.720 7.700 ;
+        RECT 0.140 8.730 442.720 11.990 ;
+        RECT 0.140 13.210 442.720 16.470 ;
+        RECT 0.140 18.810 442.720 22.070 ;
+        RECT 0.140 23.290 442.720 26.550 ;
+        RECT 0.140 28.890 442.720 31.590 ;
+        RECT 0.140 33.930 442.720 36.630 ;
+        RECT 0.140 38.970 442.720 42.230 ;
+        RECT 0.140 43.450 442.720 46.710 ;
+        RECT 0.140 49.050 442.720 52.310 ;
+        RECT 0.140 53.530 442.720 56.790 ;
+        RECT 0.140 58.010 442.720 82.550 ;
+        RECT 0.140 83.770 442.720 87.030 ;
+        RECT 0.140 89.370 442.720 92.630 ;
+        RECT 0.140 93.850 442.720 97.110 ;
+        RECT 0.140 99.450 442.720 102.710 ;
+        RECT 0.140 103.930 442.720 107.190 ;
+        RECT 0.140 109.530 442.720 112.790 ;
+        RECT 0.140 114.010 442.720 117.830 ;
+        RECT 0.140 119.050 442.720 122.310 ;
+        RECT 0.750 8.730 442.110 123.430 ;
+        RECT 0.140 27.770 442.110 123.430 ;
+        RECT 0.140 124.650 442.720 127.540 ;
+        RECT 0.140 129.690 442.720 132.950 ;
+        RECT 0.140 134.170 442.720 137.430 ;
+        RECT 0.140 124.650 442.110 138.550 ;
+        RECT 0.140 139.770 442.720 143.030 ;
+        RECT 0.140 144.250 442.720 147.510 ;
+        RECT 0.140 149.850 442.720 153.110 ;
+        RECT 0.140 154.330 442.720 157.590 ;
+        RECT 0.140 159.930 442.720 162.630 ;
+        RECT 0.140 163.850 442.720 167.670 ;
+        RECT 0.140 170.010 442.720 173.270 ;
+        RECT 0.140 174.490 442.720 177.750 ;
+        RECT 0.140 178.970 442.720 253.910 ;
+        RECT 0.140 255.130 442.720 258.390 ;
+        RECT 0.140 260.730 442.720 263.430 ;
+        RECT 0.140 265.770 442.720 268.470 ;
+        RECT 0.140 270.810 442.720 273.510 ;
+        RECT 0.140 275.850 442.720 278.550 ;
+        RECT 0.140 27.770 441.870 279.110 ;
+        RECT 0.140 139.770 442.110 279.110 ;
+        RECT 0.140 280.890 442.720 283.590 ;
+        RECT 0.750 139.770 442.110 284.710 ;
+        RECT 0.140 280.330 442.110 284.710 ;
+        RECT 0.140 285.930 442.720 288.630 ;
+        RECT 0.140 290.970 442.720 293.670 ;
+        RECT 0.140 296.010 442.720 298.710 ;
+        RECT 0.140 301.050 442.720 303.750 ;
+        RECT 0.140 285.930 442.110 309.350 ;
+        RECT 0.140 306.090 442.720 309.350 ;
+        RECT 0.140 310.570 442.720 313.830 ;
+        RECT 0.140 280.330 441.870 314.390 ;
+        RECT 0.140 310.570 442.110 314.390 ;
+        RECT 0.140 316.170 442.720 318.870 ;
+        RECT 0.140 321.210 442.720 323.910 ;
+        RECT 0.140 326.250 442.720 328.950 ;
+        RECT 0.140 331.290 442.720 333.990 ;
+        RECT 0.140 336.330 442.720 339.030 ;
+        RECT 0.750 310.570 442.110 340.150 ;
+        RECT 0.140 315.610 442.110 340.150 ;
+        RECT 0.140 341.370 442.720 344.070 ;
+        RECT 0.140 346.410 442.720 349.110 ;
+        RECT 0.140 351.450 442.720 354.150 ;
+        RECT 0.140 356.490 442.720 359.750 ;
+        RECT 0.140 360.970 442.720 364.230 ;
+        RECT 0.140 366.570 442.720 369.270 ;
+        RECT 0.140 371.610 442.720 374.310 ;
+        RECT 0.140 376.650 442.720 379.350 ;
+        RECT 0.140 341.370 442.110 384.390 ;
+        RECT 0.140 381.690 442.720 384.390 ;
+        RECT 0.140 386.730 442.720 389.430 ;
+        RECT 0.140 391.770 442.720 394.470 ;
+        RECT 0.140 385.610 442.110 395.590 ;
+        RECT 0.140 396.810 442.720 400.070 ;
+        RECT 0.140 401.290 442.720 405.110 ;
+        RECT 0.140 406.330 442.720 409.590 ;
+        RECT 0.140 396.810 442.110 410.710 ;
+        RECT 0.140 315.610 441.870 414.630 ;
+        RECT 0.140 411.930 442.720 414.630 ;
+        RECT 0.990 411.930 442.110 629.860 ;
+        RECT 0.750 411.930 442.110 625.750 ;
+        RECT 0.140 416.970 442.720 419.670 ;
+        RECT 0.140 422.010 442.720 425.270 ;
+        RECT 0.140 426.490 442.720 429.750 ;
+        RECT 0.140 415.850 442.110 616.230 ;
+        RECT 0.140 432.090 442.720 616.230 ;
+        RECT 0.140 617.450 442.720 621.270 ;
+        RECT 0.750 0.140 441.870 625.750 ;
+        RECT 0.140 623.610 442.720 625.750 ;
+        RECT 0.990 432.090 442.720 629.860 ;
+        RECT 0.140 626.970 442.720 629.860 ;
+      LAYER Metal2 ;
+        RECT 0.140 0.140 442.720 4.170 ;
+        RECT 0.140 5.910 442.720 9.210 ;
+        RECT 0.140 10.950 442.720 14.250 ;
+        RECT 0.140 15.990 442.720 19.290 ;
+        RECT 0.140 21.030 442.720 24.330 ;
+        RECT 0.140 26.070 442.720 29.370 ;
+        RECT 0.140 31.110 442.720 34.410 ;
+        RECT 0.800 31.110 442.720 34.580 ;
+        RECT 0.850 31.110 442.720 39.450 ;
+        RECT 0.140 36.150 442.720 39.450 ;
+        RECT 0.140 41.190 442.720 44.490 ;
+        RECT 0.140 46.230 442.720 49.530 ;
+        RECT 0.140 51.270 442.720 54.570 ;
+        RECT 0.140 56.310 442.720 59.610 ;
+        RECT 0.140 61.350 442.720 64.650 ;
+        RECT 0.140 66.390 442.720 69.690 ;
+        RECT 0.140 71.430 442.720 74.730 ;
+        RECT 0.140 76.470 442.720 79.770 ;
+        RECT 0.140 81.510 442.720 84.810 ;
+        RECT 0.850 71.430 442.720 84.980 ;
+        RECT 0.800 81.510 442.720 84.980 ;
+        RECT 0.800 86.380 442.720 89.850 ;
+        RECT 0.140 86.550 442.720 89.850 ;
+        RECT 0.140 91.590 442.720 94.890 ;
+        RECT 0.140 96.630 442.720 99.930 ;
+        RECT 0.850 86.380 442.720 104.970 ;
+        RECT 0.140 101.670 442.720 104.970 ;
+        RECT 0.140 106.710 442.720 110.010 ;
+        RECT 0.140 111.750 442.720 115.050 ;
+        RECT 0.140 116.790 442.720 120.090 ;
+        RECT 0.140 121.830 442.720 125.130 ;
+        RECT 0.140 126.870 442.720 130.340 ;
+        RECT 0.190 106.710 442.720 135.210 ;
+        RECT 0.140 131.910 442.720 135.210 ;
+        RECT 0.140 136.950 442.720 140.250 ;
+        RECT 0.140 141.990 442.720 145.290 ;
+        RECT 0.140 147.030 442.720 150.330 ;
+        RECT 0.140 152.070 442.720 155.370 ;
+        RECT 0.140 157.110 442.720 160.410 ;
+        RECT 0.140 162.150 442.720 165.450 ;
+        RECT 0.140 167.190 442.720 170.490 ;
+        RECT 0.140 172.230 442.720 175.530 ;
+        RECT 0.800 172.230 442.720 175.700 ;
+        RECT 0.140 177.270 442.720 180.570 ;
+        RECT 0.140 182.310 442.720 185.610 ;
+        RECT 0.140 187.350 442.720 190.650 ;
+        RECT 0.140 192.390 442.720 195.690 ;
+        RECT 0.140 197.430 442.720 200.730 ;
+        RECT 0.140 202.470 442.720 205.770 ;
+        RECT 0.140 207.510 442.720 210.810 ;
+        RECT 0.140 212.550 442.720 215.850 ;
+        RECT 0.140 217.590 442.720 220.890 ;
+        RECT 0.140 222.630 442.720 225.930 ;
+        RECT 0.140 227.670 442.720 230.970 ;
+        RECT 0.190 202.470 442.720 236.010 ;
+        RECT 0.140 232.710 442.720 236.010 ;
+        RECT 0.140 237.750 442.720 241.220 ;
+        RECT 0.190 237.750 442.720 246.090 ;
+        RECT 0.140 242.790 442.720 246.090 ;
+        RECT 0.190 237.750 0.520 246.260 ;
+        RECT 0.140 242.790 0.520 246.260 ;
+        RECT 0.140 247.830 442.720 251.130 ;
+        RECT 0.140 252.870 442.720 256.170 ;
+        RECT 0.140 257.910 442.720 261.210 ;
+        RECT 0.140 262.950 442.720 266.250 ;
+        RECT 0.140 267.990 442.720 271.290 ;
+        RECT 0.140 273.030 442.720 276.330 ;
+        RECT 0.140 278.070 442.720 281.370 ;
+        RECT 0.140 283.110 442.720 286.410 ;
+        RECT 0.140 288.150 442.720 291.450 ;
+        RECT 0.140 293.190 442.720 296.490 ;
+        RECT 0.190 257.910 442.720 301.530 ;
+        RECT 0.850 172.230 442.720 301.530 ;
+        RECT 0.140 298.230 442.720 301.530 ;
+        RECT 0.140 303.270 442.720 306.570 ;
+        RECT 0.140 308.310 442.720 311.610 ;
+        RECT 0.140 313.350 442.720 316.650 ;
+        RECT 0.140 318.390 442.720 321.690 ;
+        RECT 0.140 323.430 442.720 326.730 ;
+        RECT 0.140 328.470 442.720 331.770 ;
+        RECT 0.140 333.510 442.720 336.810 ;
+        RECT 0.140 338.550 442.720 341.850 ;
+        RECT 0.140 343.590 442.720 346.890 ;
+        RECT 0.140 348.630 442.720 351.930 ;
+        RECT 0.140 353.670 442.720 356.970 ;
+        RECT 0.140 358.710 442.720 362.010 ;
+        RECT 0.140 363.750 442.720 367.050 ;
+        RECT 0.140 368.790 442.720 372.090 ;
+        RECT 0.800 373.660 442.720 377.130 ;
+        RECT 0.850 358.710 442.720 377.130 ;
+        RECT 0.140 373.830 442.720 377.130 ;
+        RECT 0.140 378.870 442.720 382.170 ;
+        RECT 0.140 383.910 442.720 387.210 ;
+        RECT 0.140 388.950 442.720 392.250 ;
+        RECT 0.140 393.990 442.720 397.290 ;
+        RECT 0.140 399.030 442.720 402.330 ;
+        RECT 0.140 404.070 442.720 407.370 ;
+        RECT 0.140 409.110 442.720 412.410 ;
+        RECT 0.140 414.150 442.720 417.450 ;
+        RECT 0.140 419.190 442.720 422.490 ;
+        RECT 0.140 424.230 442.720 427.530 ;
+        RECT 0.140 429.270 442.720 432.570 ;
+        RECT 0.140 434.310 442.720 437.610 ;
+        RECT 0.140 439.350 442.720 442.650 ;
+        RECT 0.190 414.150 442.720 447.690 ;
+        RECT 0.140 444.220 442.720 447.690 ;
+        RECT 0.140 449.430 442.720 452.730 ;
+        RECT 0.140 454.470 442.720 457.770 ;
+        RECT 0.140 459.510 442.720 467.850 ;
+        RECT 0.140 469.590 442.720 472.890 ;
+        RECT 0.850 414.150 442.720 477.930 ;
+        RECT 0.140 474.630 442.720 477.930 ;
+        RECT 0.140 479.670 442.720 482.970 ;
+        RECT 0.140 484.710 442.720 488.010 ;
+        RECT 0.140 489.750 442.720 493.050 ;
+        RECT 0.140 494.790 442.720 498.090 ;
+        RECT 0.140 499.830 442.720 503.130 ;
+        RECT 0.140 504.870 442.720 508.170 ;
+        RECT 0.140 509.910 442.720 513.210 ;
+        RECT 0.140 514.950 442.720 518.250 ;
+        RECT 0.140 519.990 442.720 523.290 ;
+        RECT 0.140 525.030 442.720 528.330 ;
+        RECT 0.850 484.710 442.720 533.370 ;
+        RECT 0.140 530.070 442.720 533.370 ;
+        RECT 0.140 535.110 442.720 538.410 ;
+        RECT 0.140 540.150 442.720 543.450 ;
+        RECT 0.140 545.190 442.720 548.490 ;
+        RECT 0.140 550.230 442.720 553.530 ;
+        RECT 0.140 555.270 442.720 558.570 ;
+        RECT 0.140 560.310 442.720 563.610 ;
+        RECT 0.140 565.350 442.720 568.650 ;
+        RECT 0.140 570.390 442.720 573.690 ;
+        RECT 0.140 575.430 442.720 578.730 ;
+        RECT 0.140 580.470 442.720 583.770 ;
+        RECT 0.140 585.510 442.720 588.810 ;
+        RECT 0.140 590.550 442.720 593.850 ;
+        RECT 0.140 595.590 442.720 603.930 ;
+        RECT 0.140 605.670 442.720 608.970 ;
+        RECT 0.850 580.470 442.720 609.140 ;
+        RECT 0.800 605.670 442.720 609.140 ;
+        RECT 0.140 610.710 442.720 614.010 ;
+        RECT 0.800 610.710 442.720 614.180 ;
+        RECT 0.140 615.750 442.720 619.050 ;
+        RECT 0.140 620.790 442.720 624.090 ;
+        RECT 1.130 0.140 442.720 629.860 ;
+        RECT 0.140 625.830 442.720 629.860 ;
+      LAYER Metal1 ;
+        RECT 1.980 -0.400 4.620 630.000 ;
+        RECT 10.560 -0.400 15.840 630.000 ;
+        RECT 46.860 -0.400 48.180 630.400 ;
+        RECT 30.360 -0.400 48.180 630.000 ;
+        RECT 55.440 -0.400 70.620 630.000 ;
+        RECT 74.580 -0.400 75.900 630.400 ;
+        RECT 85.800 -0.400 87.120 630.000 ;
+        RECT 153.780 -0.400 156.420 630.000 ;
+        RECT 166.320 -0.400 168.960 630.000 ;
+        RECT 170.280 -0.400 196.020 630.000 ;
+        RECT 203.940 -0.400 206.580 630.400 ;
+        RECT 211.200 -0.400 213.840 630.000 ;
+        RECT 214.500 -0.400 222.420 630.000 ;
+        RECT 223.080 -0.400 239.580 630.000 ;
+        RECT 273.240 -0.400 275.220 630.000 ;
+        RECT 283.140 -0.400 284.460 630.000 ;
+        RECT 287.760 -0.400 289.740 630.000 ;
+        RECT 300.300 -0.400 302.280 630.400 ;
+        RECT 312.840 -0.400 314.820 630.000 ;
+        RECT 330.000 -0.400 331.980 630.000 ;
+        RECT 351.780 -0.400 357.060 630.000 ;
+        RECT 405.240 -0.400 421.740 630.000 ;
+        RECT 423.720 -0.400 429.000 630.000 ;
+        RECT 431.640 -0.400 432.960 630.000 ;
+        RECT 436.260 -0.400 437.580 630.000 ;
+        RECT 440.220 -0.400 441.540 630.000 ;
+        RECT 0.000 0.000 442.860 0.400 ;
+        RECT 0.115 0.000 442.745 4.220 ;
+        RECT 1.080 4.640 442.860 5.440 ;
+        RECT 0.115 5.860 442.745 9.260 ;
+        RECT 1.080 9.680 442.860 10.480 ;
+        RECT 0.115 10.900 442.745 14.300 ;
+        RECT 1.080 14.720 442.860 15.520 ;
+        RECT 0.115 15.940 442.745 19.340 ;
+        RECT 1.080 19.760 442.860 20.560 ;
+        RECT 0.115 20.980 442.745 24.380 ;
+        RECT 1.080 24.800 442.860 25.600 ;
+        RECT 0.115 26.020 442.745 29.420 ;
+        RECT 1.080 29.840 442.860 30.640 ;
+        RECT 0.115 31.060 442.745 34.460 ;
+        RECT 0.800 31.060 442.745 34.580 ;
+        RECT 1.080 34.880 442.860 35.680 ;
+        RECT 0.115 36.100 442.745 39.500 ;
+        RECT 1.080 39.920 442.860 40.720 ;
+        RECT 0.115 41.140 442.745 44.540 ;
+        RECT 1.080 44.960 442.860 45.760 ;
+        RECT 0.115 46.180 442.745 49.580 ;
+        RECT 1.080 50.000 442.860 50.800 ;
+        RECT 0.115 51.220 442.745 54.620 ;
+        RECT 1.080 55.040 442.860 55.840 ;
+        RECT 0.115 56.260 442.745 59.660 ;
+        RECT 1.080 60.080 442.860 60.880 ;
+        RECT 0.115 61.300 442.745 64.700 ;
+        RECT 1.080 65.120 442.860 65.920 ;
+        RECT 0.115 66.340 442.745 69.740 ;
+        RECT 1.080 70.160 442.860 70.960 ;
+        RECT 0.115 71.380 442.745 74.780 ;
+        RECT 1.080 75.200 442.860 76.000 ;
+        RECT 0.115 76.420 442.745 79.820 ;
+        RECT 1.080 80.240 442.860 81.040 ;
+        RECT 0.115 81.460 442.745 84.860 ;
+        RECT 0.800 81.460 442.745 84.980 ;
+        RECT 1.080 85.280 442.860 86.080 ;
+        RECT 0.800 86.380 442.745 89.900 ;
+        RECT 0.115 86.500 442.745 89.900 ;
+        RECT 1.080 90.320 442.860 91.120 ;
+        RECT 0.115 91.540 442.745 94.940 ;
+        RECT 1.080 95.360 442.860 96.160 ;
+        RECT 0.115 96.580 442.745 99.980 ;
+        RECT 1.080 100.400 442.860 101.200 ;
+        RECT 0.115 101.620 442.745 105.020 ;
+        RECT 1.080 105.440 442.860 106.240 ;
+        RECT 0.115 106.660 442.745 110.060 ;
+        RECT 1.080 110.480 442.860 111.280 ;
+        RECT 0.115 111.700 442.745 115.100 ;
+        RECT 1.080 115.520 442.860 116.320 ;
+        RECT 0.115 116.740 442.745 120.140 ;
+        RECT 1.080 120.560 442.860 121.360 ;
+        RECT 0.115 121.780 442.745 125.180 ;
+        RECT 1.080 125.600 442.860 126.400 ;
+        RECT 0.115 126.820 442.745 130.220 ;
+        RECT 1.080 130.640 442.860 131.440 ;
+        RECT 0.115 131.860 442.745 135.260 ;
+        RECT 1.080 135.680 442.860 136.480 ;
+        RECT 0.115 136.900 442.745 140.300 ;
+        RECT 1.080 140.720 442.860 141.520 ;
+        RECT 0.115 141.940 442.745 145.340 ;
+        RECT 1.080 145.760 442.860 146.560 ;
+        RECT 0.115 146.980 442.745 150.380 ;
+        RECT 1.080 150.800 442.860 151.600 ;
+        RECT 0.115 152.020 442.745 155.420 ;
+        RECT 1.080 155.840 442.860 156.640 ;
+        RECT 0.115 157.060 442.745 160.460 ;
+        RECT 1.080 160.880 442.860 161.680 ;
+        RECT 0.115 162.100 442.745 165.500 ;
+        RECT 1.080 165.920 442.860 166.720 ;
+        RECT 0.115 167.140 442.745 170.540 ;
+        RECT 1.080 170.960 442.860 171.760 ;
+        RECT 0.115 172.180 442.745 175.580 ;
+        RECT 0.800 172.180 442.745 175.700 ;
+        RECT 1.080 176.000 442.860 176.800 ;
+        RECT 0.115 177.220 442.745 180.620 ;
+        RECT 1.080 181.040 442.860 181.840 ;
+        RECT 0.115 182.260 442.745 185.660 ;
+        RECT 1.080 186.080 442.860 186.880 ;
+        RECT 0.115 187.300 442.745 190.700 ;
+        RECT 1.080 191.120 442.860 191.920 ;
+        RECT 0.115 192.340 442.745 195.740 ;
+        RECT 1.080 196.160 442.860 196.960 ;
+        RECT 0.115 197.380 442.745 200.780 ;
+        RECT 1.080 201.200 442.860 202.000 ;
+        RECT 0.115 202.420 442.745 205.820 ;
+        RECT 1.080 206.240 442.860 207.040 ;
+        RECT 0.115 207.460 442.745 210.860 ;
+        RECT 1.080 211.280 442.860 212.080 ;
+        RECT 0.115 212.500 442.745 215.900 ;
+        RECT 1.080 216.320 442.860 217.120 ;
+        RECT 0.115 217.540 442.745 220.940 ;
+        RECT 1.080 221.360 442.860 222.160 ;
+        RECT 0.115 222.580 442.745 225.980 ;
+        RECT 1.080 226.400 442.860 227.200 ;
+        RECT 0.115 227.620 442.745 231.020 ;
+        RECT 1.080 231.440 442.860 232.240 ;
+        RECT 0.115 232.660 442.745 236.060 ;
+        RECT 1.080 236.480 442.860 237.280 ;
+        RECT 0.115 237.700 442.745 241.100 ;
+        RECT 0.140 237.700 442.745 241.195 ;
+        RECT 0.140 237.700 0.520 241.220 ;
+        RECT 0.800 237.700 442.745 241.220 ;
+        RECT 1.080 241.520 442.860 242.320 ;
+        RECT 0.115 242.740 442.745 246.140 ;
+        RECT 0.800 242.620 442.745 246.235 ;
+        RECT 0.140 242.740 442.745 246.235 ;
+        RECT 0.140 242.740 0.520 246.260 ;
+        RECT 1.080 246.560 442.860 247.360 ;
+        RECT 0.115 247.780 442.745 251.180 ;
+        RECT 1.080 251.600 442.860 252.400 ;
+        RECT 0.115 252.820 442.745 256.220 ;
+        RECT 1.080 256.640 442.860 257.440 ;
+        RECT 0.115 257.860 442.745 261.260 ;
+        RECT 1.080 261.680 442.860 262.480 ;
+        RECT 0.115 262.900 442.745 266.300 ;
+        RECT 1.080 266.720 442.860 267.520 ;
+        RECT 0.115 267.940 442.745 271.340 ;
+        RECT 1.080 271.760 442.860 272.560 ;
+        RECT 0.115 272.980 442.745 276.380 ;
+        RECT 1.080 276.800 442.860 277.600 ;
+        RECT 0.115 278.020 442.745 281.420 ;
+        RECT 1.080 281.840 442.860 282.640 ;
+        RECT 0.115 283.060 442.745 286.460 ;
+        RECT 0.800 283.060 442.745 286.580 ;
+        RECT 1.080 286.880 442.860 287.680 ;
+        RECT 0.115 288.100 442.745 291.500 ;
+        RECT 1.080 291.920 442.860 292.720 ;
+        RECT 0.115 293.140 442.745 296.540 ;
+        RECT 1.080 296.960 442.860 297.760 ;
+        RECT 0.115 298.180 442.745 301.580 ;
+        RECT 1.080 302.000 442.860 302.800 ;
+        RECT 0.115 303.220 442.745 306.620 ;
+        RECT 1.080 307.040 442.860 307.840 ;
+        RECT 0.115 308.260 442.745 311.660 ;
+        RECT 1.080 312.080 442.860 312.880 ;
+        RECT 0.115 313.300 442.745 316.700 ;
+        RECT 1.080 317.120 442.860 317.920 ;
+        RECT 0.115 318.340 442.745 321.740 ;
+        RECT 1.080 322.160 442.860 322.960 ;
+        RECT 0.115 323.380 442.745 326.780 ;
+        RECT 1.080 327.200 442.860 328.000 ;
+        RECT 0.115 328.420 442.745 331.820 ;
+        RECT 1.080 332.240 442.860 333.040 ;
+        RECT 0.115 333.460 442.745 336.860 ;
+        RECT 1.080 337.280 442.860 338.080 ;
+        RECT 0.115 338.500 442.745 341.900 ;
+        RECT 1.080 342.320 442.860 343.120 ;
+        RECT 0.115 343.540 442.745 346.940 ;
+        RECT 1.080 347.360 442.860 348.160 ;
+        RECT 0.115 348.580 442.745 351.980 ;
+        RECT 1.080 352.400 442.860 353.200 ;
+        RECT 0.115 353.620 442.745 357.020 ;
+        RECT 1.080 357.440 442.860 358.240 ;
+        RECT 0.115 358.660 442.745 362.060 ;
+        RECT 1.080 362.480 442.860 363.280 ;
+        RECT 0.115 363.700 442.745 367.100 ;
+        RECT 1.080 367.520 442.860 368.320 ;
+        RECT 0.115 368.740 442.745 372.140 ;
+        RECT 1.080 372.560 442.860 373.360 ;
+        RECT 0.800 373.660 442.745 377.180 ;
+        RECT 0.115 373.780 442.745 377.180 ;
+        RECT 1.080 377.600 442.860 378.400 ;
+        RECT 0.115 378.820 442.745 382.220 ;
+        RECT 1.080 382.640 442.860 383.440 ;
+        RECT 0.115 383.860 442.745 387.260 ;
+        RECT 1.080 387.680 442.860 388.480 ;
+        RECT 0.115 388.900 442.745 392.300 ;
+        RECT 1.080 392.720 442.860 393.520 ;
+        RECT 0.115 393.940 442.745 397.340 ;
+        RECT 1.080 397.760 442.860 398.560 ;
+        RECT 0.115 398.980 442.745 402.380 ;
+        RECT 1.080 402.800 442.860 403.600 ;
+        RECT 0.115 404.020 442.745 407.420 ;
+        RECT 1.080 407.840 442.860 408.640 ;
+        RECT 0.115 409.060 442.745 412.460 ;
+        RECT 1.080 412.880 442.860 413.680 ;
+        RECT 0.115 414.100 442.745 417.500 ;
+        RECT 1.080 417.920 442.860 418.720 ;
+        RECT 0.115 419.140 442.745 422.540 ;
+        RECT 1.080 422.960 442.860 423.760 ;
+        RECT 0.115 424.180 442.745 427.580 ;
+        RECT 1.080 428.000 442.860 428.800 ;
+        RECT 0.115 429.220 442.745 432.620 ;
+        RECT 1.080 433.040 442.860 433.840 ;
+        RECT 0.115 434.260 442.745 437.660 ;
+        RECT 1.080 438.080 442.860 438.880 ;
+        RECT 0.115 439.300 442.745 442.700 ;
+        RECT 1.080 443.120 442.860 443.920 ;
+        RECT 0.140 444.220 0.520 447.740 ;
+        RECT 0.140 444.245 442.745 447.740 ;
+        RECT 0.115 444.340 442.745 447.740 ;
+        RECT 1.080 448.160 442.860 448.960 ;
+        RECT 0.115 449.380 442.745 452.780 ;
+        RECT 1.080 453.200 442.860 454.000 ;
+        RECT 0.115 454.420 442.745 457.820 ;
+        RECT 1.080 458.240 442.860 459.040 ;
+        RECT 0.000 463.280 442.745 464.080 ;
+        RECT 0.115 459.460 442.745 467.900 ;
+        RECT 1.080 468.320 442.860 469.120 ;
+        RECT 0.115 469.540 442.745 472.940 ;
+        RECT 0.115 474.580 442.745 477.980 ;
+        RECT 0.115 479.620 442.745 483.020 ;
+        RECT 0.115 484.660 442.745 488.060 ;
+        RECT 0.115 489.700 442.745 493.100 ;
+        RECT 0.115 494.740 442.745 498.140 ;
+        RECT 0.115 499.780 442.745 503.180 ;
+        RECT 0.115 504.820 442.745 508.220 ;
+        RECT 0.115 509.860 442.745 513.260 ;
+        RECT 0.115 514.900 442.745 518.300 ;
+        RECT 0.115 519.940 442.745 523.340 ;
+        RECT 0.115 524.980 442.745 528.380 ;
+        RECT 0.115 530.020 442.745 533.420 ;
+        RECT 0.115 535.060 442.745 538.460 ;
+        RECT 0.115 540.100 442.745 543.500 ;
+        RECT 0.115 545.140 442.745 548.540 ;
+        RECT 0.115 550.180 442.745 553.580 ;
+        RECT 0.115 555.220 442.745 558.620 ;
+        RECT 0.115 560.260 442.745 563.660 ;
+        RECT 0.115 565.300 442.745 568.700 ;
+        RECT 0.115 570.340 442.745 573.740 ;
+        RECT 0.115 575.380 442.745 578.780 ;
+        RECT 0.115 580.420 442.745 583.820 ;
+        RECT 0.115 585.460 442.745 588.860 ;
+        RECT 0.115 590.500 442.745 593.900 ;
+        RECT 0.000 599.360 442.745 600.160 ;
+        RECT 0.115 595.540 442.745 603.980 ;
+        RECT 0.115 605.620 442.745 609.020 ;
+        RECT 0.800 605.620 442.745 609.140 ;
+        RECT 0.115 610.660 442.745 614.060 ;
+        RECT 0.800 610.660 442.745 614.180 ;
+        RECT 0.115 615.700 442.745 619.100 ;
+        RECT 0.115 620.740 442.745 624.140 ;
+        RECT 1.080 0.000 442.745 630.000 ;
+        RECT 0.115 625.780 442.745 630.000 ;
+        RECT 0.000 629.600 442.860 630.000 ;
+        RECT 2.640 -0.400 3.960 630.400 ;
+        RECT 11.880 -0.400 14.520 630.400 ;
+        RECT 21.120 0.000 23.760 630.400 ;
+        RECT 27.060 0.000 29.700 630.400 ;
+        RECT 36.300 -0.400 38.280 630.400 ;
+        RECT 46.860 0.000 49.500 630.400 ;
+        RECT 57.420 -0.400 62.700 630.400 ;
+        RECT 73.920 0.000 76.560 630.400 ;
+        RECT 96.360 -0.400 99.000 630.400 ;
+        RECT 108.240 0.000 109.560 630.400 ;
+        RECT 113.520 0.000 131.340 630.400 ;
+        RECT 132.660 -0.400 135.300 630.400 ;
+        RECT 132.000 0.000 135.300 630.400 ;
+        RECT 142.560 0.000 145.860 630.400 ;
+        RECT 153.780 -0.400 155.760 630.400 ;
+        RECT 166.320 -0.400 168.300 630.400 ;
+        RECT 175.560 -0.400 178.200 630.400 ;
+        RECT 180.840 -0.400 194.040 630.400 ;
+        RECT 203.940 0.000 207.240 630.400 ;
+        RECT 215.160 -0.400 217.800 630.400 ;
+        RECT 225.720 -0.400 228.360 630.400 ;
+        RECT 234.300 -0.400 236.940 630.400 ;
+        RECT 241.560 0.000 254.760 630.400 ;
+        RECT 260.700 0.000 262.680 630.400 ;
+        RECT 269.280 0.000 270.600 630.400 ;
+        RECT 276.540 0.000 279.180 630.400 ;
+        RECT 285.120 0.000 287.100 630.400 ;
+        RECT 293.700 -0.400 295.680 630.400 ;
+        RECT 293.040 0.000 295.680 630.400 ;
+        RECT 300.300 0.000 302.940 630.400 ;
+        RECT 308.220 0.000 310.860 630.400 ;
+        RECT 317.460 0.000 319.440 630.400 ;
+  END 
+END tdsp_core
+
+END LIBRARY

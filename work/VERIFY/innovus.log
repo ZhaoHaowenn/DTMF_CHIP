@@ -1,0 +1,26 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v15.20-p005_1, built Wed Nov 11 11:16:39 PST 2015
+Options:	
+Date:		Thu Dec 10 14:07:33 2015
+Host:		vlsj-vinita (x86_64 w/Linux 2.6.32-71.el6.x86_64) (1core*1cpu*Intel(R) Xeon(R) CPU E5-2697 v3 @ 2.60GHz 35840KB)
+OS:		Red Hat Enterprise Linux Workstation release 6.0 (Santiago)
+
+License:
+		invs	Innovus Implementation System	15.2	checkout succeeded
+Sourcing startup file ./enc.tcl
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+
+*** Memory Usage v#1 (Current mem = 483.633M, initial mem = 164.508M) ***
+*** Message Summary: 0 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:09.0, real=0:00:32.0, mem=483.6M) ---

@@ -1,0 +1,8 @@
+################################################
+#                                              #
+# Silicon Perspective, A Cadence Company       #
+# FirstEncounter Design Restore script         #
+#    for design session: /home/vinita/NRU/NRU_6_1/RUN/NANOROUTE_BASIC/PARTITION/tdsp_core/tdsp_core_routed.enc                     
+#                                              #
+################################################
+restoreDesign tdsp_core_routed.enc.dat tdsp_core

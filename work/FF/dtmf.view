@@ -1,0 +1,11 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+create_rc_corner -name dtmf_rc_corner -cap_table {../../captable/t018s6mlv.capTbl} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0} -qx_tech_file {../../QRC/t018s6mm.tch} 
+create_library_set -name dtmf_libs_min -timing {../../lib/pllclk_fast.lib ../../lib/ram_128x16A_fast_syn.lib ../../lib/rom_512x16A_fast_syn.lib ../../lib/ram_256x16A_fast_syn.lib ../../lib/fast.lib ../../lib/tpz973gbc-lite_fast.lib} -si {../../CDB/fast.cdb}
+create_library_set -name dtmf_libs_max -timing {../../lib/pllclk_slow.lib ../../lib/ram_128x16A_slow_syn.lib ../../lib/ram_256x16A_slow_syn.lib ../../lib/rom_512x16A_slow_syn.lib ../../lib/slow.lib ../../lib/tpz973gwc-lite_slow.lib} -si {../../CDB/slow.cdb}
+create_constraint_mode -name common -sdc_files {../dtmf.sdc}
+create_delay_corner -name dtmf_corner_min -library_set {dtmf_libs_min} -rc_corner {dtmf_rc_corner}
+create_delay_corner -name dtmf_corner_max -library_set {dtmf_libs_max} -rc_corner {dtmf_rc_corner}
+create_analysis_view -name dtmf_view_hold -constraint_mode {common} -delay_corner {dtmf_corner_min}
+create_analysis_view -name dtmf_view_setup -constraint_mode {common} -delay_corner {dtmf_corner_max}
+set_analysis_view -setup {dtmf_view_setup} -hold {dtmf_view_hold}

@@ -1,0 +1,1 @@
+restoreDesign [file dirname [file normalize [info script]]]/tdsp_core.dat tdsp_core
